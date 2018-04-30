@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28738AE529AAE42003FD7588 /* Pods_MedicOnePedsCards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9617EBDEF72A9518A146015 /* Pods_MedicOnePedsCards.framework */; };
 		613227F02094104D006A2585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613227EF2094104D006A2585 /* AppDelegate.swift */; };
 		613227F22094104D006A2585 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613227F12094104D006A2585 /* ViewController.swift */; };
 		613227F52094104D006A2585 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613227F32094104D006A2585 /* Main.storyboard */; };
@@ -29,9 +28,6 @@
 		61322801209411CB006A2585 /* ColorsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsCollectionViewController.swift; sourceTree = "<group>"; };
 		61322803209413AD006A2585 /* BigButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigButtonCollectionViewCell.swift; sourceTree = "<group>"; };
 		61322804209413AD006A2585 /* BigButtonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BigButtonCollectionViewCell.xib; sourceTree = "<group>"; };
-		6F7FB5118A6465D9A215D22E /* Pods-MedicOnePedsCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicOnePedsCards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedicOnePedsCards/Pods-MedicOnePedsCards.debug.xcconfig"; sourceTree = "<group>"; };
-		B9617EBDEF72A9518A146015 /* Pods_MedicOnePedsCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicOnePedsCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF520CE9367E417480835D50 /* Pods-MedicOnePedsCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicOnePedsCards.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedicOnePedsCards/Pods-MedicOnePedsCards.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,29 +35,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28738AE529AAE42003FD7588 /* Pods_MedicOnePedsCards.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		55ADFD9A116D125B2CBCB33E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6F7FB5118A6465D9A215D22E /* Pods-MedicOnePedsCards.debug.xcconfig */,
-				CF520CE9367E417480835D50 /* Pods-MedicOnePedsCards.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		613227E32094104D006A2585 = {
 			isa = PBXGroup;
 			children = (
 				613227EE2094104D006A2585 /* MedicOnePedsCards */,
 				613227ED2094104D006A2585 /* Products */,
-				55ADFD9A116D125B2CBCB33E /* Pods */,
-				FA31A66AEB57748C6CC598DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,14 +73,6 @@
 			path = MedicOnePedsCards;
 			sourceTree = "<group>";
 		};
-		FA31A66AEB57748C6CC598DC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B9617EBDEF72A9518A146015 /* Pods_MedicOnePedsCards.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,11 +80,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 613227FE2094104D006A2585 /* Build configuration list for PBXNativeTarget "MedicOnePedsCards" */;
 			buildPhases = (
-				AB12E49ACC85567F39A2C045 /* [CP] Check Pods Manifest.lock */,
 				613227E82094104D006A2585 /* Sources */,
 				613227E92094104D006A2585 /* Frameworks */,
 				613227EA2094104D006A2585 /* Resources */,
-				7CB7E7AC9686801D0659DD91 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,45 +140,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7CB7E7AC9686801D0659DD91 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MedicOnePedsCards/Pods-MedicOnePedsCards-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LGButton/LGButton.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGButton.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedicOnePedsCards/Pods-MedicOnePedsCards-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AB12E49ACC85567F39A2C045 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MedicOnePedsCards-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		613227E82094104D006A2585 /* Sources */ = {
@@ -349,7 +284,6 @@
 		};
 		613227FF2094104D006A2585 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F7FB5118A6465D9A215D22E /* Pods-MedicOnePedsCards.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -365,7 +299,6 @@
 		};
 		613228002094104D006A2585 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF520CE9367E417480835D50 /* Pods-MedicOnePedsCards.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
