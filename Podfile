@@ -6,5 +6,6 @@ target 'MedicOnePedsCards' do
   use_frameworks!
 
   # Pods for MedicOnePedsCards
+  pod 'LGButton'
 
 end
