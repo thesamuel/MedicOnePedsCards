@@ -39,7 +39,7 @@ class ColorsCollectionViewController: UICollectionViewController, UICollectionVi
     
         // Configure the cell
         // FIXME
-        cell.color = UIColor.red
+        cell.color = UIColor(red: 242/255.0, green: 38/255.0, blue: 19/255.0, alpha: 1.0)
         cell.title = "mom"
     
         return cell
@@ -50,15 +50,17 @@ class ColorsCollectionViewController: UICollectionViewController, UICollectionVi
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
+        // Set size for each cell
         let width = collectionView.bounds.width / 2
         let height = width / 1.75
+
         return CGSize(width: width, height: height);
     }
 
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0;
+        return 0;  // FIXME
     }
 
     /*
