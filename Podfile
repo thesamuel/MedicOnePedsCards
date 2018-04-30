@@ -6,30 +6,15 @@ target 'MedicOnePedsCards' do
   use_frameworks!
 
   # Pods for MedicOnePedsCards
-  pod 'LGButton'
+  pod 'LGButton'  # Colored buttons
 
 end
 
 # Workaround for Cocoapods issue #7606
 post_install do |installer|
-installer.pods_project.build_configurations.each do |config|
-config.build_settings.delete('CODE_SIGNING_ALLOWED')
-config.build_settings.delete('CODE_SIGNING_REQUIRED')
-end
+    installer.pods_project.build_configurations.each do |config|
+        config.build_settings.delete('CODE_SIGNING_ALLOWED')
+        config.build_settings.delete('CODE_SIGNING_REQUIRED')
+    end
 end
 
-#post_install do |installer|
-  #installer.pods_project.targets.each do |target|
-    #target.build_configurations.each do |config|
-      #config.build_settings['CONFIGURATION_BUILD_DIR'] = '$PODS_CONFIGURATION_BUILD_DIR'
-    #end
-  #end
-#end
-
-#post_install do |installer|
-  #installer.pods_project.build_configurations.each do |config|
-    #config.build_settings['LD_RUNPATH_SEARCH_PATHS'] = [
-      #'$(FRAMEWORK_SEARCH_PATHS)'
-    #]
-  #end
-#end
