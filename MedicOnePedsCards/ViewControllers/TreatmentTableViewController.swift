@@ -18,11 +18,12 @@ class TreatmentTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-
         // Do any additional setup after loading the view.
         self.navigationItem.title = treatmentGroup.title
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log",
+                                                                 style: .plain,
+                                                                 target: self,
+                                                                 action: #selector(openLog(_:)))
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -30,7 +31,12 @@ class TreatmentTableViewController: UITableViewController {
         navigationBar?.barTintColor = UIColor(hex: colorGroup.color)
     }
 
-    
+    @objc func openLog(_: Any?) {
+        let viewController = LogTableViewController.storyboardInstance()
+        present(viewController, animated: true, completion: nil)
+    }
+
+
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

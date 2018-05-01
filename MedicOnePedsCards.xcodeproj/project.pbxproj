@@ -20,6 +20,7 @@
 		618DE15D2097EFA200A18742 /* TreatmentGroupsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DE15C2097EFA200A18742 /* TreatmentGroupsCollectionViewController.swift */; };
 		618DE1612097F71E00A18742 /* LGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DE1602097F71E00A18742 /* LGButton.swift */; };
 		619EC8842096DC2E00D64AF2 /* ColorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EC8832096DC2E00D64AF2 /* ColorGroup.swift */; };
+		61D1C0C520983FEB009D0E71 /* LogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D1C0C420983FEB009D0E71 /* LogTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		618DE15C2097EFA200A18742 /* TreatmentGroupsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentGroupsCollectionViewController.swift; sourceTree = "<group>"; };
 		618DE1602097F71E00A18742 /* LGButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGButton.swift; sourceTree = "<group>"; };
 		619EC8832096DC2E00D64AF2 /* ColorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGroup.swift; sourceTree = "<group>"; };
+		61D1C0C420983FEB009D0E71 /* LogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				61322801209411CB006A2585 /* ColorsCollectionViewController.swift */,
 				618DE15C2097EFA200A18742 /* TreatmentGroupsCollectionViewController.swift */,
 				611ED706209810DC00CEC93A /* TreatmentTableViewController.swift */,
+				61D1C0C420983FEB009D0E71 /* LogTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61D1C0C520983FEB009D0E71 /* LogTableViewController.swift in Sources */,
 				6174D56C20981BFA002123F2 /* EntryTableViewCell.swift in Sources */,
 				61322802209411CB006A2585 /* ColorsCollectionViewController.swift in Sources */,
 				613227F02094104D006A2585 /* AppDelegate.swift in Sources */,

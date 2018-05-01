@@ -8,6 +8,49 @@
 
 import UIKit
 
+struct Log {
+
+    public static let filename = "log.json"
+
+    static func url() -> URL {
+        return FileManager.default
+            .urls(for: .documentDirectory, in: .userDomainMask)
+            .first!
+            .appendingPathComponent(filename)
+    }
+
+    static func log() -> [LogEntry]? {
+        let logUrl = Log.url()
+
+        let decoder = JSONDecoder()
+        let entries = try? decoder.decode([LogEntry].self, from: Data(contentsOf: logUrl))
+
+        return entries
+    }
+
+    static func save(entries: [LogEntry]?) {
+        guard let entries = entries else {
+            return
+        }
+
+        let logUrl = Log.url()
+
+        let encoder = JSONEncoder()
+        let entriesJson = try! encoder.encode(entries)
+        try! entriesJson.write(to: logUrl) // FIXME: can this fail?
+    }
+
+    static func append(entry: LogEntry) {
+        var entries = log() ?? [LogEntry]()
+        entries.append(entry)
+        save(entries: entries)
+    }
+}
+
+struct LogEntry {
+    let entry: ColorGroup.TreatmentGroup.Treatment.Entry
+    let date: Date
+}
 
 struct ColorGroup: Codable {
     public static let localFilename = "medicone"
