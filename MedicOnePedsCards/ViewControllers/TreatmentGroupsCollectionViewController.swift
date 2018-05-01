@@ -10,8 +10,7 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class TreatmentGroupsCollectionViewController: UICollectionViewController,
-UICollectionViewDelegateFlowLayout {
+class TreatmentGroupsCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     var colorGroup: ColorGroup!
 

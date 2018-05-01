@@ -20,6 +20,15 @@ class BigButtonCollectionViewCell: UICollectionViewCell {
         }
     }
 
+    public var subtitle: String {
+        get {
+            return button.subtitleString
+        }
+        set(newSubtitle) {
+            button.subtitleString = newSubtitle
+        }
+    }
+
     public var color: UIColor? {
         get {
             return button.gradientEndColor

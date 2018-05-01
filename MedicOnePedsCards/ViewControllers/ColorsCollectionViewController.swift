@@ -56,6 +56,7 @@ class ColorsCollectionViewController: UICollectionViewController, UICollectionVi
         let colorGroup = colorGroups[indexPath.item]
 
         cell.title = colorGroup.title
+        cell.subtitle = "\(colorGroup.kgs) kg (\(colorGroup.lbs) lb)"
         cell.color = UIColor(hex: colorGroup.color)  // FIXME
         cell.button.didTouchUpInside = { _ in
             self.performTreatmentGroupsSegue(forIndexPath: indexPath)
