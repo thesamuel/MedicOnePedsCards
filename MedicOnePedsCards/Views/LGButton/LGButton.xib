@@ -25,6 +25,7 @@
                 <outlet property="rightImage" destination="9eI-ND-Xxs" id="2Qd-KE-WEm"/>
                 <outlet property="rightImageHeightConstraint" destination="NGP-D9-laU" id="k2Z-qR-6NN"/>
                 <outlet property="rightImageWidthConstraint" destination="Y1b-dI-Wf2" id="6Nm-vg-b2R"/>
+                <outlet property="subtitleLbl" destination="iYr-it-z6S" id="DIM-0t-yft"/>
                 <outlet property="titleLbl" destination="HRu-ej-AYk" id="eIe-LY-a87"/>
                 <outlet property="topMainConstraint" destination="MkW-ju-N7C" id="SXp-w8-Fzg"/>
                 <outlet property="trailingLoadingConstraint" destination="pRy-28-jvf" id="M2k-zb-x0C"/>
@@ -49,12 +50,23 @@
                                 <constraint firstAttribute="width" priority="750" constant="20" id="e53-Mt-tx6"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRu-ej-AYk">
-                            <rect key="frame" x="94.5" y="28.5" width="33.5" height="20.5"/>
-                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mtt-Pj-S2f">
+                            <rect key="frame" x="82" y="18" width="59" height="41"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRu-ej-AYk">
+                                    <rect key="frame" x="0.0" y="0.0" width="59" height="20.5"/>
+                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Subtitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYr-it-z6S" userLabel="Subtitle Lbl">
+                                    <rect key="frame" x="0.0" y="20.5" width="59" height="20.5"/>
+                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9eI-ND-Xxs">
                             <rect key="frame" x="172.5" y="28.5" width="50" height="20"/>
                             <constraints>

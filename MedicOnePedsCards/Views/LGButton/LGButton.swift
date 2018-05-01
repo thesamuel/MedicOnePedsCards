@@ -26,6 +26,7 @@ public class LGButton: UIControl {
     
     fileprivate var rootView : UIView!
     @IBOutlet fileprivate weak var titleLbl: UILabel!
+    @IBOutlet weak var subtitleLbl: UILabel!
     @IBOutlet fileprivate weak var mainStackView: UIStackView!
     
     @IBOutlet fileprivate weak var bgContentView: UIView!
@@ -140,6 +141,30 @@ public class LGButton: UIControl {
     }
     
     @IBInspectable public var titleFontSize: CGFloat = 14.0 {
+        didSet{
+            setupView()
+        }
+    }
+
+    @IBInspectable public var subtitleColor: UIColor = UIColor.white {
+        didSet{
+            setupView()
+        }
+    }
+
+    @IBInspectable public var subtitleString: String = "" {
+        didSet{
+            setupView()
+        }
+    }
+
+    @IBInspectable public var subtitleFontName: String? {
+        didSet{
+            setupView()
+        }
+    }
+
+    @IBInspectable public var subtitleFontSize: CGFloat = 14.0 {
         didSet{
             setupView()
         }
@@ -321,6 +346,7 @@ public class LGButton: UIControl {
         setupGradientBackground()
         setupBorderAndCorners()
         setupTitle()
+        setupSubtitle()
         setupLeftImage()
         setupRightImage()
         setupSpacings()
@@ -389,7 +415,18 @@ public class LGButton: UIControl {
             titleLbl.font = UIFont.systemFont(ofSize: titleFontSize)
         }
     }
-    
+
+    fileprivate func setupSubtitle() {
+        subtitleLbl.isHidden = subtitleString.isEmpty
+        subtitleLbl.text = subtitleString
+        subtitleLbl.textColor = subtitleColor
+        if subtitleFontName != nil {
+            subtitleLbl.font = UIFont.init(name:subtitleFontName! , size:subtitleFontSize)
+        }else{
+            subtitleLbl.font = UIFont.systemFont(ofSize: subtitleFontSize)
+        }
+    }
+
     fileprivate func setupLeftImage(){
         setupImage(imageView: leftImage,
                    image: leftImageSrc,
