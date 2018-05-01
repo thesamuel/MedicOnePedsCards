@@ -29,6 +29,32 @@ class LogTableViewController: UITableViewController {
         self.entries = Log.log()
     }
 
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+
+        if editing {
+            let clearAllButtonItem = UIBarButtonItem(title: "Clear All",
+                                                     style: .plain,
+                                                     target: self,
+                                                     action: #selector(clearAll(_:)))
+            self.navigationItem.rightBarButtonItems = [
+                self.editButtonItem,
+                clearAllButtonItem
+            ]
+        } else {
+            self.navigationItem.rightBarButtonItems = [self.editButtonItem]
+        }
+    }
+
+    @objc func clearAll(_: Any?) {
+        entries = [LogEntry]()
+        Log.save(entries: entries)
+        tableView.reloadData()
+
+        setEditing(false, animated: true)
+    }
+
+
     @objc func close(_: Any?) {
         Log.save(entries: entries)
         self.dismiss(animated: true, completion: nil)
