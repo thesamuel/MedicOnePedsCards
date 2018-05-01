@@ -47,7 +47,7 @@ struct Log {
     }
 }
 
-struct LogEntry {
+struct LogEntry: Codable {
     let entry: ColorGroup.TreatmentGroup.Treatment.Entry
     let date: Date
 }

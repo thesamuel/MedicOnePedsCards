@@ -14,8 +14,8 @@ class EntryTableViewCell: UITableViewCell {
     @IBOutlet weak var doseLabel: UILabel!
     @IBOutlet weak var amountLabel: UILabel!
     @IBOutlet weak var volumeLabel: UILabel!
-    @IBOutlet weak var administerButton: UIButton!
-
+    @IBOutlet weak var administerButton: LGButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

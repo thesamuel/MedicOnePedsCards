@@ -180,7 +180,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="nVU-11-Uxk" detailTextLabel="ECH-nG-8QB" style="IBUITableViewCellStyleSubtitle" id="b8g-DV-Ogm">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="nVU-11-Uxk" detailTextLabel="ECH-nG-8QB" style="IBUITableViewCellStyleSubtitle" id="b8g-DV-Ogm">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b8g-DV-Ogm" id="KLW-83-fX9">
@@ -256,30 +256,45 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69t-Cf-I24">
-                                            <rect key="frame" x="312" y="41" width="86" height="30"/>
-                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
-                                            <state key="normal" title="Adminster"/>
-                                        </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IYB-OY-rRy" customClass="LGButton" customModule="MedicOnePedsCards" customModuleProvider="target">
+                                            <rect key="frame" x="297" y="41" width="101" height="29.666666666666671"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Administer"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                    <size key="value" width="0.0" height="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                    <real key="value" value="0.25"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="69t-Cf-I24" firstAttribute="top" secondItem="WPb-vl-8dA" secondAttribute="bottom" constant="8" id="1gf-td-Fre"/>
                                         <constraint firstItem="MTy-Hz-oqc" firstAttribute="leading" secondItem="E9F-9L-KKf" secondAttribute="leading" constant="16" id="1w1-JC-laJ"/>
+                                        <constraint firstItem="IYB-OY-rRy" firstAttribute="centerY" secondItem="OWi-Jf-iUR" secondAttribute="centerY" id="9Ua-K0-Nz1"/>
                                         <constraint firstItem="2b7-7g-wcf" firstAttribute="top" secondItem="E9F-9L-KKf" secondAttribute="top" constant="12" id="Bnb-D0-Blv"/>
-                                        <constraint firstAttribute="trailing" secondItem="69t-Cf-I24" secondAttribute="trailing" constant="16" id="ISa-GU-mwj"/>
-                                        <constraint firstItem="MTy-Hz-oqc" firstAttribute="centerY" secondItem="69t-Cf-I24" secondAttribute="centerY" id="Jsc-pt-HjW"/>
+                                        <constraint firstAttribute="bottom" secondItem="IYB-OY-rRy" secondAttribute="bottom" constant="12" id="C4A-pV-nPf"/>
+                                        <constraint firstItem="IYB-OY-rRy" firstAttribute="top" secondItem="WPb-vl-8dA" secondAttribute="bottom" constant="8" id="Eme-kY-bpi"/>
                                         <constraint firstItem="OWi-Jf-iUR" firstAttribute="leading" secondItem="MTy-Hz-oqc" secondAttribute="trailing" constant="16" id="LFC-mq-Rg7"/>
                                         <constraint firstItem="OWi-Jf-iUR" firstAttribute="baseline" secondItem="MTy-Hz-oqc" secondAttribute="baseline" id="Oox-WC-pgL"/>
+                                        <constraint firstAttribute="trailing" secondItem="IYB-OY-rRy" secondAttribute="trailing" constant="16" id="TFq-PM-KFM"/>
                                         <constraint firstItem="2b7-7g-wcf" firstAttribute="leading" secondItem="E9F-9L-KKf" secondAttribute="leading" constant="16" id="buW-18-Scd"/>
                                         <constraint firstItem="WPb-vl-8dA" firstAttribute="top" secondItem="E9F-9L-KKf" secondAttribute="top" constant="12" id="pJc-8H-nyF"/>
                                         <constraint firstAttribute="trailing" secondItem="WPb-vl-8dA" secondAttribute="trailing" constant="16" id="tVa-OL-Lkp"/>
-                                        <constraint firstAttribute="bottom" secondItem="69t-Cf-I24" secondAttribute="bottom" constant="12" id="vZ7-ye-YdF"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="administerButton" destination="69t-Cf-I24" id="RKv-hA-47j"/>
+                                    <outlet property="administerButton" destination="IYB-OY-rRy" id="4Kb-eS-Q6X"/>
                                     <outlet property="amountLabel" destination="OWi-Jf-iUR" id="XXc-2j-f3M"/>
                                     <outlet property="doseLabel" destination="MTy-Hz-oqc" id="Y5z-4a-MnB"/>
                                     <outlet property="treatmentLabel" destination="2b7-7g-wcf" id="ZJi-zx-bzi"/>
@@ -295,7 +310,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zoo-6p-Hgg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2652" y="320.68965517241384"/>
+            <point key="canvasLocation" x="2650.7246376811595" y="320.38043478260875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dc8-8C-QWW">

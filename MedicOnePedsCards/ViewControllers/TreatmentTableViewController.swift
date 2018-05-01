@@ -36,6 +36,12 @@ class TreatmentTableViewController: UITableViewController {
         present(viewController, animated: true, completion: nil)
     }
 
+    func administerTreatment(with indexPath: IndexPath) {
+        let entry = treatmentGroup.treatments[indexPath.section].entries[indexPath.row]
+        let logEntry = LogEntry(entry: entry, date: Date())
+        Log.append(entry: logEntry)
+    }
+
 
     // MARK: - Table view data source
 
@@ -65,7 +71,9 @@ class TreatmentTableViewController: UITableViewController {
         cell.amountLabel.text = "Amt: " + entry.amount
         cell.doseLabel.text = "Dose: " + entry.dose
         cell.volumeLabel.text = "Vol: " + entry.vol
-        cell.administerButton.layer.cornerRadius = 4  // FIXME
+        cell.administerButton.didTouchUpInside = { _ in
+            self.administerTreatment(with: indexPath)
+        }
         // TODO: add IM/IN field
 
         return cell
