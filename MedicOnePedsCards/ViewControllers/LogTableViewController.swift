@@ -66,10 +66,10 @@ class LogTableViewController: UITableViewController {
                             forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
+            entries?.remove(at: indexPath.row)
+
+            // Update the Table View
             tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array,
-            // and add a new row to the table view
         }
 
         Log.save(entries: entries)
