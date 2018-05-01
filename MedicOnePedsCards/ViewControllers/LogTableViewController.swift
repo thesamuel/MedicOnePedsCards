@@ -20,7 +20,8 @@ class LogTableViewController: UITableViewController {
 
         // Display an Edit button in the navigation bar
         self.navigationItem.rightBarButtonItem = self.editButtonItem
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done,
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Close",
+                                                                style: .done,
                                                                 target: self,
                                                                 action: #selector(close(_:)))
 
