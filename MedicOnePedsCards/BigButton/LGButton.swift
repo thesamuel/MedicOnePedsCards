@@ -538,4 +538,26 @@ public class LGButton: UIControl {
             }
         }
     }
+
+    // MARK: - Actions
+    // Enables a closure to be used with a target action
+    // Taken from https://cocoacasts.com/elegant-controls-in-swift-with-closures
+    
+    typealias DidTapButton = (LGButton) -> ()
+
+    var didTouchUpInside: DidTapButton? {
+        didSet {
+            if didTouchUpInside != nil {
+                addTarget(self, action: #selector(didTouchUpInside(sender:)), for: .touchUpInside)
+            } else {
+                removeTarget(self, action: #selector(didTouchUpInside(sender:)), for: .touchUpInside)
+            }
+        }
+    }
+
+    @objc func didTouchUpInside(sender: LGButton) {
+        if let handler = didTouchUpInside {
+            handler(self)
+        }
+    }
 }
