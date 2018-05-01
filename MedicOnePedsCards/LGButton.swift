@@ -19,6 +19,8 @@ public class LGButton: UIControl {
 
     let touchDisableRadius : CGFloat = 100.0
 
+//    let availableFontIcons = ["fa", "io", "oc", "ic", "ma", "ti", "mi"]
+
     var gradient : CAGradientLayer?
     
     
@@ -27,16 +29,16 @@ public class LGButton: UIControl {
     @IBOutlet fileprivate weak var mainStackView: UIStackView!
     
     @IBOutlet fileprivate weak var bgContentView: UIView!
-    @IBOutlet fileprivate weak var leftIcon: UILabel!
+//    @IBOutlet fileprivate weak var leftIcon: UILabel!
     @IBOutlet fileprivate weak var leftImage: UIImageView!
-    @IBOutlet fileprivate weak var rightIcon: UILabel!
+//    @IBOutlet fileprivate weak var rightIcon: UILabel!
     @IBOutlet fileprivate weak var rightImage: UIImageView!
     
     @IBOutlet fileprivate weak var trailingMainConstraint: NSLayoutConstraint!
     @IBOutlet fileprivate weak var leadingMainConstraint: NSLayoutConstraint!
     @IBOutlet fileprivate weak var bottomMainConstraint: NSLayoutConstraint!
     @IBOutlet fileprivate weak var topMainConstraint: NSLayoutConstraint!
-
+    
     @IBOutlet fileprivate weak var leftImageHeightConstraint: NSLayoutConstraint!
     @IBOutlet fileprivate weak var leftImageWidthConstraint: NSLayoutConstraint!
     @IBOutlet fileprivate weak var rightImageHeightConstraint: NSLayoutConstraint!
@@ -152,30 +154,30 @@ public class LGButton: UIControl {
         }
     }
     
-    @IBInspectable public var leftIconString: String = "" {
-        didSet{
-            setupView()
-        }
-    }
-    
-    @IBInspectable public var leftIconFontName: String = " " {
-        didSet{
-            setupView()
-        }
-    }
-    
-    @IBInspectable public var leftIconFontSize: CGFloat = 14.0 {
-        didSet{
-            setupView()
-        }
-    }
-    
-    @IBInspectable public var leftIconColor: UIColor = UIColor.white {
-        didSet{
-            setupView()
-        }
-    }
-    
+//    @IBInspectable public var leftIconString: String = "" {
+//        didSet{
+//            setupView()
+//        }
+//    }
+//
+//    @IBInspectable public var leftIconFontName: String = " " {
+//        didSet{
+//            setupView()
+//        }
+//    }
+//
+//    @IBInspectable public var leftIconFontSize: CGFloat = 14.0 {
+//        didSet{
+//            setupView()
+//        }
+//    }
+//
+//    @IBInspectable public var leftIconColor: UIColor = UIColor.white {
+//        didSet{
+//            setupView()
+//        }
+//    }
+
     @IBInspectable public var leftImageSrc: UIImage? = nil {
         didSet{
             setupView()
@@ -200,30 +202,30 @@ public class LGButton: UIControl {
         }
     }
     
-    @IBInspectable public var rightIconString: String = "" {
-        didSet{
-            setupView()
-        }
-    }
-    
-    @IBInspectable public var rightIconFontName: String = " " {
-        didSet{
-            setupView()
-        }
-    }
-    
-    @IBInspectable public var rightIconFontSize: CGFloat = 14.0 {
-        didSet{
-            setupView()
-        }
-    }
-    
-    @IBInspectable public var rightIconColor: UIColor = UIColor.white {
-        didSet{
-            setupView()
-        }
-    }
-    
+//    @IBInspectable public var rightIconString: String = "" {
+//        didSet{
+//            setupView()
+//        }
+//    }
+//
+//    @IBInspectable public var rightIconFontName: String = " " {
+//        didSet{
+//            setupView()
+//        }
+//    }
+//
+//    @IBInspectable public var rightIconFontSize: CGFloat = 14.0 {
+//        didSet{
+//            setupView()
+//        }
+//    }
+//
+//    @IBInspectable public var rightIconColor: UIColor = UIColor.white {
+//        didSet{
+//            setupView()
+//        }
+//    }
+
     @IBInspectable public var rightImageSrc: UIImage? = nil {
         didSet{
             setupView()
@@ -371,6 +373,8 @@ public class LGButton: UIControl {
         setupGradientBackground()
         setupBorderAndCorners()
         setupTitle()
+//        setupLeftIcon()
+//        setupRightIcon()
         setupLeftImage()
         setupRightImage()
         setupSpacings()
@@ -439,6 +443,22 @@ public class LGButton: UIControl {
             titleLbl.font = UIFont.systemFont(ofSize: titleFontSize)
         }
     }
+    
+//    fileprivate func setupLeftIcon(){
+//        setupIcon(icon: leftIcon,
+//                  fontName: leftIconFontName,
+//                  iconName: leftIconString,
+//                  fontSize: leftIconFontSize,
+//                  color: leftIconColor)
+//    }
+//
+//    fileprivate func setupRightIcon(){
+//        setupIcon(icon: rightIcon,
+//                  fontName: rightIconFontName,
+//                  iconName: rightIconString,
+//                  fontSize: rightIconFontSize,
+//                  color: rightIconColor)
+//    }
 
     fileprivate func setupLeftImage(){
         setupImage(imageView: leftImage,
@@ -448,11 +468,11 @@ public class LGButton: UIControl {
                    heightConstraint: leftImageHeightConstraint,
                    widthValue: leftImageWidth,
                    heightValue: leftImageHeight)
-        leftIcon.isHidden =  (leftImageSrc != nil)
+//        leftIcon.isHidden =  (leftImageSrc != nil)
     }
     
     fileprivate func setupRightImage(){
-        rightIcon.isHidden =  rightImageSrc != nil
+//        rightIcon.isHidden =  rightImageSrc != nil
         setupImage(imageView: rightImage,
                    image: rightImageSrc,
                    color: rightImageColor,
@@ -460,7 +480,7 @@ public class LGButton: UIControl {
                    heightConstraint: rightImageHeightConstraint,
                    widthValue: rightImageWidth,
                    heightValue: rightImageHeight)
-        rightIcon.isHidden =  (rightImageSrc != nil)
+//        rightIcon.isHidden =  (rightImageSrc != nil)
     }
     
     fileprivate func setupSpacings(){
@@ -491,7 +511,12 @@ public class LGButton: UIControl {
         loadingSpinner.color = loadingSpinnerColor
         setupBorderAndCorners()
     }
-
+    
+//    fileprivate func setupIcon(icon:UILabel, fontName:String, iconName:String, fontSize:CGFloat, color:UIColor){
+//        icon.isHidden = true  // FIXME
+//        setupBorderAndCorners()
+//    }
+//    
     fileprivate func setupImage(imageView:UIImageView, image:UIImage?, color:UIColor?, widthConstraint:NSLayoutConstraint, heightConstraint:NSLayoutConstraint, widthValue:CGFloat, heightValue:CGFloat){
         imageView.isHidden = image == nil
         if image != nil {

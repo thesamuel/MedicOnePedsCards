@@ -1,56 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qmq-ds-UaZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PrR-3X-LnT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Medic One Peds Cards-->
-        <scene sceneID="eF1-v5-55x">
+        <scene sceneID="mWV-3J-82C">
             <objects>
-                <collectionViewController id="vNu-ph-BQr" customClass="ColorsCollectionViewController" customModule="MedicOnePedsCards" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="bUa-ra-cMD">
+                <collectionViewController id="OMO-Tn-BSj" customClass="ColorsCollectionViewController" customModule="MedicOnePedsCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" id="wyU-su-jBo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="i52-gu-hIo">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lqt-5e-m3C">
                             <size key="itemSize" width="175" height="100"/>
-                            <size key="headerReferenceSize" width="0.0" height="16"/>
+                            <size key="headerReferenceSize" width="0.0" height="10"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="CyG-mx-7IG" customClass="BigButtonCollectionViewCell" customModule="MedicOnePedsCards" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="16" width="175" height="100"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Rce-bo-ew3" customClass="BigButtonCollectionViewCell" customModule="MedicOnePedsCards" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="10" width="175" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="175" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14e-3R-riB" customClass="LGButton" customModule="LGButton">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ak-mq-Mif" customClass="LGButton" customModule="MedicOnePedsCards" customModuleProvider="target">
                                             <rect key="frame" x="8" y="8" width="159" height="84"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Error"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                                                    <real key="value" value="40"/>
+                                                </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
-                                                    <color key="value" red="0.8529314398765564" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="value" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
-                                                    <color key="value" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="gradientRotation">
                                                     <real key="value" value="20"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                     <real key="value" value="5"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Error"/>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
-                                                    <real key="value" value="30"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
                                                     <real key="value" value="2"/>
@@ -63,124 +62,48 @@
                                     </subviews>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="14e-3R-riB" firstAttribute="top" secondItem="CyG-mx-7IG" secondAttribute="top" constant="8" id="BmH-jc-HMd"/>
-                                    <constraint firstItem="14e-3R-riB" firstAttribute="leading" secondItem="CyG-mx-7IG" secondAttribute="leading" constant="8" id="aPH-xt-04B"/>
-                                    <constraint firstAttribute="trailing" secondItem="14e-3R-riB" secondAttribute="trailing" constant="8" id="xHf-SU-P9V"/>
-                                    <constraint firstAttribute="bottom" secondItem="14e-3R-riB" secondAttribute="bottom" constant="8" id="yyz-Df-UUe"/>
+                                    <constraint firstAttribute="bottom" secondItem="4ak-mq-Mif" secondAttribute="bottom" constant="8" id="4dj-L9-RpV"/>
+                                    <constraint firstItem="4ak-mq-Mif" firstAttribute="leading" secondItem="Rce-bo-ew3" secondAttribute="leading" constant="8" id="6ur-GE-AKt"/>
+                                    <constraint firstItem="4ak-mq-Mif" firstAttribute="top" secondItem="Rce-bo-ew3" secondAttribute="top" constant="8" id="qHB-5X-vN7"/>
+                                    <constraint firstAttribute="trailing" secondItem="4ak-mq-Mif" secondAttribute="trailing" constant="8" id="swl-jm-aLx"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="button" destination="14e-3R-riB" id="pxL-1A-buo"/>
+                                    <outlet property="button" destination="4ak-mq-Mif" id="tqB-WK-Np1"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="oq9-21-eum">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="16"/>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8ZR-J3-fyu">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="10"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </collectionReusableView>
                         <connections>
-                            <outlet property="dataSource" destination="vNu-ph-BQr" id="KLm-5D-CnU"/>
-                            <outlet property="delegate" destination="vNu-ph-BQr" id="W2V-Je-QuV"/>
+                            <outlet property="dataSource" destination="OMO-Tn-BSj" id="vZk-sc-RJf"/>
+                            <outlet property="delegate" destination="OMO-Tn-BSj" id="m5E-RF-olo"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Medic One Peds Cards" id="qfF-Bo-8yk"/>
-                    <connections>
-                        <segue destination="Hf7-aG-Hag" kind="show" id="3ad-LG-QlD"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Medic One Peds Cards" id="NpT-1b-VXO"/>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="v07-d0-n9C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RgG-YP-Gbq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="172" y="0.0"/>
-        </scene>
-        <!--Treatment Groups Collection View Controller-->
-        <scene sceneID="keu-wN-7CB">
-            <objects>
-                <collectionViewController id="Hf7-aG-Hag" customClass="TreatmentGroupsCollectionViewController" customModule="MedicOnePedsCards" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="S13-WT-36l">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="n84-cl-30E">
-                            <size key="itemSize" width="375" height="100"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="HtO-eO-h78" customClass="BigButtonCollectionViewCell" customModule="MedicOnePedsCards" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOM-CC-TgD" customClass="LGButton" customModule="LGButton">
-                                            <rect key="frame" x="13" y="13" width="349" height="74"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
-                                                    <color key="value" red="0.85293143989999998" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
-                                                    <color key="value" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="gradientRotation">
-                                                    <real key="value" value="20"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                    <real key="value" value="5"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Error"/>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
-                                                    <real key="value" value="30"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                    <real key="value" value="2"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                    <real key="value" value="0.5"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </view>
-                                    </subviews>
-                                </view>
-                                <constraints>
-                                    <constraint firstAttribute="bottomMargin" secondItem="HOM-CC-TgD" secondAttribute="bottom" constant="5" id="MCC-dh-wBc"/>
-                                    <constraint firstItem="HOM-CC-TgD" firstAttribute="top" secondItem="HtO-eO-h78" secondAttribute="topMargin" constant="5" id="l81-su-fMD"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="HOM-CC-TgD" secondAttribute="trailing" constant="5" id="pkA-A8-HwJ"/>
-                                    <constraint firstItem="HOM-CC-TgD" firstAttribute="leading" secondItem="HtO-eO-h78" secondAttribute="leadingMargin" constant="5" id="tfq-xw-w1B"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="button" destination="HOM-CC-TgD" id="qaX-KU-qSn"/>
-                                </connections>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="Hf7-aG-Hag" id="FIb-S6-a3F"/>
-                            <outlet property="delegate" destination="Hf7-aG-Hag" id="asq-8k-NKM"/>
-                        </connections>
-                    </collectionView>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Zb-vk-cn2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1100" y="-0.44977511244377816"/>
+            <point key="canvasLocation" x="900" y="320.68965517241384"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="jck-ob-vCS">
+        <scene sceneID="dc8-8C-QWW">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qmq-ds-UaZ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PrR-3X-LnT" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DQV-Eb-fvF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oJM-2p-S22">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vNu-ph-BQr" kind="relationship" relationship="rootViewController" id="4Wx-SN-OIa"/>
+                        <segue destination="OMO-Tn-BSj" kind="relationship" relationship="rootViewController" id="eUj-pJ-x5n"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LAB-7B-t0g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uhO-Jz-nOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-582.39999999999998" y="0.89955022488755632"/>
+            <point key="canvasLocation" x="160" y="321.13943028485761"/>
         </scene>
     </scenes>
 </document>

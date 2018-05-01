@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		613227F02094104D006A2585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613227EF2094104D006A2585 /* AppDelegate.swift */; };
-		613227F52094104D006A2585 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613227F32094104D006A2585 /* Main.storyboard */; };
 		613227F72094104D006A2585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 613227F62094104D006A2585 /* Assets.xcassets */; };
 		613227FA2094104D006A2585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613227F82094104D006A2585 /* LaunchScreen.storyboard */; };
 		61322802209411CB006A2585 /* ColorsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61322801209411CB006A2585 /* ColorsCollectionViewController.swift */; };
 		61322805209413AD006A2585 /* BigButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61322803209413AD006A2585 /* BigButtonCollectionViewCell.swift */; };
+		618695002097FBDA0046F9DF /* LGButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 618694FF2097FBDA0046F9DF /* LGButton.xib */; };
+		618C924D2097FDBC002D8222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 618C924B2097FDBC002D8222 /* Main.storyboard */; };
 		618DE15B2097EC3600A18742 /* colorgroups.json in Resources */ = {isa = PBXBuildFile; fileRef = 618DE15A2097EC3500A18742 /* colorgroups.json */; };
 		618DE15D2097EFA200A18742 /* TreatmentGroupsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DE15C2097EFA200A18742 /* TreatmentGroupsCollectionViewController.swift */; };
 		618DE1612097F71E00A18742 /* LGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DE1602097F71E00A18742 /* LGButton.swift */; };
@@ -22,12 +23,13 @@
 /* Begin PBXFileReference section */
 		613227EC2094104D006A2585 /* MedicOnePedsCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicOnePedsCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		613227EF2094104D006A2585 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		613227F42094104D006A2585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		613227F62094104D006A2585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		613227F92094104D006A2585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		613227FB2094104D006A2585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61322801209411CB006A2585 /* ColorsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsCollectionViewController.swift; sourceTree = "<group>"; };
 		61322803209413AD006A2585 /* BigButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		618694FF2097FBDA0046F9DF /* LGButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGButton.xib; sourceTree = "<group>"; };
+		618C924C2097FDBC002D8222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		618DE15A2097EC3500A18742 /* colorgroups.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = colorgroups.json; sourceTree = "<group>"; };
 		618DE15C2097EFA200A18742 /* TreatmentGroupsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentGroupsCollectionViewController.swift; sourceTree = "<group>"; };
 		618DE1602097F71E00A18742 /* LGButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGButton.swift; sourceTree = "<group>"; };
@@ -65,10 +67,11 @@
 			isa = PBXGroup;
 			children = (
 				613227EF2094104D006A2585 /* AppDelegate.swift */,
-				613227F32094104D006A2585 /* Main.storyboard */,
+				618C924B2097FDBC002D8222 /* Main.storyboard */,
 				619EC8832096DC2E00D64AF2 /* ColorGroup.swift */,
 				61322801209411CB006A2585 /* ColorsCollectionViewController.swift */,
 				618DE1602097F71E00A18742 /* LGButton.swift */,
+				618694FF2097FBDA0046F9DF /* LGButton.xib */,
 				618DE15C2097EFA200A18742 /* TreatmentGroupsCollectionViewController.swift */,
 				61322803209413AD006A2585 /* BigButtonCollectionViewCell.swift */,
 				618DE15A2097EC3500A18742 /* colorgroups.json */,
@@ -139,9 +142,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				613227FA2094104D006A2585 /* LaunchScreen.storyboard in Resources */,
+				618C924D2097FDBC002D8222 /* Main.storyboard in Resources */,
 				613227F72094104D006A2585 /* Assets.xcassets in Resources */,
-				613227F52094104D006A2585 /* Main.storyboard in Resources */,
 				618DE15B2097EC3600A18742 /* colorgroups.json in Resources */,
+				618695002097FBDA0046F9DF /* LGButton.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,20 +168,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		613227F32094104D006A2585 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				613227F42094104D006A2585 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		613227F82094104D006A2585 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				613227F92094104D006A2585 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		618C924B2097FDBC002D8222 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				618C924C2097FDBC002D8222 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
