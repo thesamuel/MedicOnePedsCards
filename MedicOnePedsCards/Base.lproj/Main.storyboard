@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -82,10 +83,86 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Medic One Peds Cards" id="qfF-Bo-8yk"/>
+                    <connections>
+                        <segue destination="Hf7-aG-Hag" kind="show" id="3ad-LG-QlD"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v07-d0-n9C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="172" y="0.0"/>
+        </scene>
+        <!--Treatment Groups Collection View Controller-->
+        <scene sceneID="keu-wN-7CB">
+            <objects>
+                <collectionViewController id="Hf7-aG-Hag" customClass="TreatmentGroupsCollectionViewController" customModule="MedicOnePedsCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="S13-WT-36l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="n84-cl-30E">
+                            <size key="itemSize" width="375" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="HtO-eO-h78" customClass="BigButtonCollectionViewCell" customModule="MedicOnePedsCards" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOM-CC-TgD" customClass="LGButton" customModule="LGButton">
+                                            <rect key="frame" x="13" y="13" width="349" height="74"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                                    <color key="value" red="0.85293143989999998" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                                    <color key="value" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="gradientRotation">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Error"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                                                    <real key="value" value="30"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                    <real key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                    <real key="value" value="0.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottomMargin" secondItem="HOM-CC-TgD" secondAttribute="bottom" constant="5" id="MCC-dh-wBc"/>
+                                    <constraint firstItem="HOM-CC-TgD" firstAttribute="top" secondItem="HtO-eO-h78" secondAttribute="topMargin" constant="5" id="l81-su-fMD"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="HOM-CC-TgD" secondAttribute="trailing" constant="5" id="pkA-A8-HwJ"/>
+                                    <constraint firstItem="HOM-CC-TgD" firstAttribute="leading" secondItem="HtO-eO-h78" secondAttribute="leadingMargin" constant="5" id="tfq-xw-w1B"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="button" destination="HOM-CC-TgD" id="qaX-KU-qSn"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Hf7-aG-Hag" id="FIb-S6-a3F"/>
+                            <outlet property="delegate" destination="Hf7-aG-Hag" id="asq-8k-NKM"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Zb-vk-cn2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1100" y="-0.44977511244377816"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jck-ob-vCS">

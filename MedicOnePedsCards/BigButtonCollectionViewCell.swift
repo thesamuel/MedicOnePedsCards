@@ -10,7 +10,7 @@ import UIKit
 import LGButton
 
 class BigButtonCollectionViewCell: UICollectionViewCell {
-    @IBOutlet private weak var button: LGButton!
+    @IBOutlet weak var button: LGButton!
 
     public var title: String {
         get {
@@ -29,7 +29,6 @@ class BigButtonCollectionViewCell: UICollectionViewCell {
             guard let endColor = color else {
                 return
             }
-
 
             // Get HSV from new endColor
             let saturationDelta: CGFloat = 0.4
