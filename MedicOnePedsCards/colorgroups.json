@@ -1,0 +1,1406 @@
+[
+  {
+    "color" : "#6C7A89",
+    "title" : "Grey",
+    "lbs" : 4,
+    "kgs" : 9,
+    "treatmentGroups" : [
+      {
+        "title" : "RSI",
+        "treatments" : [
+          {
+            "title" : "Premed",
+            "entries" : [
+              {
+                "amount" : "0.1 mg",
+                "title" : "Atropine",
+                "vol" : "1 ml",
+                "dose" : "0.02 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Induction",
+            "entries" : [
+              {
+                "amount" : "0.8 mg",
+                "title" : "Etomidate",
+                "vol" : "0.4 ml",
+                "dose" : "0.2 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Paralysis",
+            "entries" : [
+              {
+                "amount" : "8 mg",
+                "title" : "Succinylcholine",
+                "vol" : "0.4 ml",
+                "dose" : "2 mg/kg"
+              },
+              {
+                "amount" : "4 mg",
+                "title" : "Rocuronium",
+                "vol" : "0.4 mL",
+                "dose" : "1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Sedation",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Midazolam (5 mg/mL)",
+                "vol" : "0.1 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Pain",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Morphine (10 mg/mL)",
+                "vol" : "0.04 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title" : "Cardiac",
+        "treatments" : [
+          {
+            "title" : "Epinephrine",
+            "entries" : [
+              {
+                "amount" : "0.1 mg",
+                "title" : "Epinephrine (0.1 mg/mL)",
+                "vol" : "1 ml",
+                "dose" : "0.02 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Induction",
+            "entries" : [
+              {
+                "amount" : "0.8 mg",
+                "title" : "Etomidate",
+                "vol" : "0.4 ml",
+                "dose" : "0.2 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Paralysis",
+            "entries" : [
+              {
+                "amount" : "8 mg",
+                "title" : "Succinylcholine",
+                "vol" : "0.4 ml",
+                "dose" : "2 mg/kg"
+              },
+              {
+                "amount" : "4 mg",
+                "title" : "Rocuronium",
+                "vol" : "0.4 mL",
+                "dose" : "1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Sedation",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Midazolam (5 mg/mL)",
+                "vol" : "0.1 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Pain",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Morphine (10 mg/mL)",
+                "vol" : "0.04 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "vitalsAndEquipment" : {
+      "minimumSBP" : 60,
+      "ettDepth" : 9.5,
+      "respiratoryRange" : [
+        30,
+        60
+      ],
+      "suctionCath" : 8,
+      "approximateAge" : 3,
+      "fluidBolus" : 80,
+      "ettSize" : 3,
+      "heartRateRange" : [
+        100,
+        180
+      ]
+    }
+  },
+  {
+    "color" : "#F47983",
+    "title" : "Pink",
+    "lbs" : 4,
+    "kgs" : 9,
+    "treatmentGroups" : [
+      {
+        "title" : "RSI",
+        "treatments" : [
+          {
+            "title" : "Premed",
+            "entries" : [
+              {
+                "amount" : "0.1 mg",
+                "title" : "Atropine",
+                "vol" : "1 ml",
+                "dose" : "0.02 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Induction",
+            "entries" : [
+              {
+                "amount" : "0.8 mg",
+                "title" : "Etomidate",
+                "vol" : "0.4 ml",
+                "dose" : "0.2 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Paralysis",
+            "entries" : [
+              {
+                "amount" : "8 mg",
+                "title" : "Succinylcholine",
+                "vol" : "0.4 ml",
+                "dose" : "2 mg/kg"
+              },
+              {
+                "amount" : "4 mg",
+                "title" : "Rocuronium",
+                "vol" : "0.4 mL",
+                "dose" : "1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Sedation",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Midazolam (5 mg/mL)",
+                "vol" : "0.1 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Pain",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Morphine (10 mg/mL)",
+                "vol" : "0.04 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title" : "Cardiac",
+        "treatments" : [
+          {
+            "title" : "Epinephrine",
+            "entries" : [
+              {
+                "amount" : "0.1 mg",
+                "title" : "Epinephrine (0.1 mg/mL)",
+                "vol" : "1 ml",
+                "dose" : "0.02 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Induction",
+            "entries" : [
+              {
+                "amount" : "0.8 mg",
+                "title" : "Etomidate",
+                "vol" : "0.4 ml",
+                "dose" : "0.2 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Paralysis",
+            "entries" : [
+              {
+                "amount" : "8 mg",
+                "title" : "Succinylcholine",
+                "vol" : "0.4 ml",
+                "dose" : "2 mg/kg"
+              },
+              {
+                "amount" : "4 mg",
+                "title" : "Rocuronium",
+                "vol" : "0.4 mL",
+                "dose" : "1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Sedation",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Midazolam (5 mg/mL)",
+                "vol" : "0.1 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Pain",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Morphine (10 mg/mL)",
+                "vol" : "0.04 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "vitalsAndEquipment" : {
+      "minimumSBP" : 60,
+      "ettDepth" : 9.5,
+      "respiratoryRange" : [
+        30,
+        60
+      ],
+      "suctionCath" : 8,
+      "approximateAge" : 3,
+      "fluidBolus" : 80,
+      "ettSize" : 3,
+      "heartRateRange" : [
+        100,
+        180
+      ]
+    }
+  },
+  {
+    "color" : "#F22613",
+    "title" : "Red",
+    "lbs" : 4,
+    "kgs" : 9,
+    "treatmentGroups" : [
+      {
+        "title" : "RSI",
+        "treatments" : [
+          {
+            "title" : "Premed",
+            "entries" : [
+              {
+                "amount" : "0.1 mg",
+                "title" : "Atropine",
+                "vol" : "1 ml",
+                "dose" : "0.02 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Induction",
+            "entries" : [
+              {
+                "amount" : "0.8 mg",
+                "title" : "Etomidate",
+                "vol" : "0.4 ml",
+                "dose" : "0.2 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Paralysis",
+            "entries" : [
+              {
+                "amount" : "8 mg",
+                "title" : "Succinylcholine",
+                "vol" : "0.4 ml",
+                "dose" : "2 mg/kg"
+              },
+              {
+                "amount" : "4 mg",
+                "title" : "Rocuronium",
+                "vol" : "0.4 mL",
+                "dose" : "1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Sedation",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Midazolam (5 mg/mL)",
+                "vol" : "0.1 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Pain",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Morphine (10 mg/mL)",
+                "vol" : "0.04 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title" : "Cardiac",
+        "treatments" : [
+          {
+            "title" : "Epinephrine",
+            "entries" : [
+              {
+                "amount" : "0.1 mg",
+                "title" : "Epinephrine (0.1 mg/mL)",
+                "vol" : "1 ml",
+                "dose" : "0.02 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Induction",
+            "entries" : [
+              {
+                "amount" : "0.8 mg",
+                "title" : "Etomidate",
+                "vol" : "0.4 ml",
+                "dose" : "0.2 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Paralysis",
+            "entries" : [
+              {
+                "amount" : "8 mg",
+                "title" : "Succinylcholine",
+                "vol" : "0.4 ml",
+                "dose" : "2 mg/kg"
+              },
+              {
+                "amount" : "4 mg",
+                "title" : "Rocuronium",
+                "vol" : "0.4 mL",
+                "dose" : "1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Sedation",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Midazolam (5 mg/mL)",
+                "vol" : "0.1 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Pain",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Morphine (10 mg/mL)",
+                "vol" : "0.04 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "vitalsAndEquipment" : {
+      "minimumSBP" : 60,
+      "ettDepth" : 9.5,
+      "respiratoryRange" : [
+        30,
+        60
+      ],
+      "suctionCath" : 8,
+      "approximateAge" : 3,
+      "fluidBolus" : 80,
+      "ettSize" : 3,
+      "heartRateRange" : [
+        100,
+        180
+      ]
+    }
+  },
+  {
+    "color" : "#8E44AD",
+    "title" : "Purple",
+    "lbs" : 4,
+    "kgs" : 9,
+    "treatmentGroups" : [
+      {
+        "title" : "RSI",
+        "treatments" : [
+          {
+            "title" : "Premed",
+            "entries" : [
+              {
+                "amount" : "0.1 mg",
+                "title" : "Atropine",
+                "vol" : "1 ml",
+                "dose" : "0.02 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Induction",
+            "entries" : [
+              {
+                "amount" : "0.8 mg",
+                "title" : "Etomidate",
+                "vol" : "0.4 ml",
+                "dose" : "0.2 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Paralysis",
+            "entries" : [
+              {
+                "amount" : "8 mg",
+                "title" : "Succinylcholine",
+                "vol" : "0.4 ml",
+                "dose" : "2 mg/kg"
+              },
+              {
+                "amount" : "4 mg",
+                "title" : "Rocuronium",
+                "vol" : "0.4 mL",
+                "dose" : "1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Sedation",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Midazolam (5 mg/mL)",
+                "vol" : "0.1 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Pain",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Morphine (10 mg/mL)",
+                "vol" : "0.04 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title" : "Cardiac",
+        "treatments" : [
+          {
+            "title" : "Epinephrine",
+            "entries" : [
+              {
+                "amount" : "0.1 mg",
+                "title" : "Epinephrine (0.1 mg/mL)",
+                "vol" : "1 ml",
+                "dose" : "0.02 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Induction",
+            "entries" : [
+              {
+                "amount" : "0.8 mg",
+                "title" : "Etomidate",
+                "vol" : "0.4 ml",
+                "dose" : "0.2 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Paralysis",
+            "entries" : [
+              {
+                "amount" : "8 mg",
+                "title" : "Succinylcholine",
+                "vol" : "0.4 ml",
+                "dose" : "2 mg/kg"
+              },
+              {
+                "amount" : "4 mg",
+                "title" : "Rocuronium",
+                "vol" : "0.4 mL",
+                "dose" : "1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Sedation",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Midazolam (5 mg/mL)",
+                "vol" : "0.1 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Pain",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Morphine (10 mg/mL)",
+                "vol" : "0.04 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "vitalsAndEquipment" : {
+      "minimumSBP" : 60,
+      "ettDepth" : 9.5,
+      "respiratoryRange" : [
+        30,
+        60
+      ],
+      "suctionCath" : 8,
+      "approximateAge" : 3,
+      "fluidBolus" : 80,
+      "ettSize" : 3,
+      "heartRateRange" : [
+        100,
+        180
+      ]
+    }
+  },
+  {
+    "color" : "#F4D03F",
+    "title" : "Yellow",
+    "lbs" : 4,
+    "kgs" : 9,
+    "treatmentGroups" : [
+      {
+        "title" : "RSI",
+        "treatments" : [
+          {
+            "title" : "Premed",
+            "entries" : [
+              {
+                "amount" : "0.1 mg",
+                "title" : "Atropine",
+                "vol" : "1 ml",
+                "dose" : "0.02 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Induction",
+            "entries" : [
+              {
+                "amount" : "0.8 mg",
+                "title" : "Etomidate",
+                "vol" : "0.4 ml",
+                "dose" : "0.2 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Paralysis",
+            "entries" : [
+              {
+                "amount" : "8 mg",
+                "title" : "Succinylcholine",
+                "vol" : "0.4 ml",
+                "dose" : "2 mg/kg"
+              },
+              {
+                "amount" : "4 mg",
+                "title" : "Rocuronium",
+                "vol" : "0.4 mL",
+                "dose" : "1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Sedation",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Midazolam (5 mg/mL)",
+                "vol" : "0.1 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Pain",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Morphine (10 mg/mL)",
+                "vol" : "0.04 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title" : "Cardiac",
+        "treatments" : [
+          {
+            "title" : "Epinephrine",
+            "entries" : [
+              {
+                "amount" : "0.1 mg",
+                "title" : "Epinephrine (0.1 mg/mL)",
+                "vol" : "1 ml",
+                "dose" : "0.02 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Induction",
+            "entries" : [
+              {
+                "amount" : "0.8 mg",
+                "title" : "Etomidate",
+                "vol" : "0.4 ml",
+                "dose" : "0.2 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Paralysis",
+            "entries" : [
+              {
+                "amount" : "8 mg",
+                "title" : "Succinylcholine",
+                "vol" : "0.4 ml",
+                "dose" : "2 mg/kg"
+              },
+              {
+                "amount" : "4 mg",
+                "title" : "Rocuronium",
+                "vol" : "0.4 mL",
+                "dose" : "1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Sedation",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Midazolam (5 mg/mL)",
+                "vol" : "0.1 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Pain",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Morphine (10 mg/mL)",
+                "vol" : "0.04 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "vitalsAndEquipment" : {
+      "minimumSBP" : 60,
+      "ettDepth" : 9.5,
+      "respiratoryRange" : [
+        30,
+        60
+      ],
+      "suctionCath" : 8,
+      "approximateAge" : 3,
+      "fluidBolus" : 80,
+      "ettSize" : 3,
+      "heartRateRange" : [
+        100,
+        180
+      ]
+    }
+  },
+  {
+    "color" : "#EEEEEE",
+    "title" : "White",
+    "lbs" : 4,
+    "kgs" : 9,
+    "treatmentGroups" : [
+      {
+        "title" : "RSI",
+        "treatments" : [
+          {
+            "title" : "Premed",
+            "entries" : [
+              {
+                "amount" : "0.1 mg",
+                "title" : "Atropine",
+                "vol" : "1 ml",
+                "dose" : "0.02 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Induction",
+            "entries" : [
+              {
+                "amount" : "0.8 mg",
+                "title" : "Etomidate",
+                "vol" : "0.4 ml",
+                "dose" : "0.2 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Paralysis",
+            "entries" : [
+              {
+                "amount" : "8 mg",
+                "title" : "Succinylcholine",
+                "vol" : "0.4 ml",
+                "dose" : "2 mg/kg"
+              },
+              {
+                "amount" : "4 mg",
+                "title" : "Rocuronium",
+                "vol" : "0.4 mL",
+                "dose" : "1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Sedation",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Midazolam (5 mg/mL)",
+                "vol" : "0.1 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Pain",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Morphine (10 mg/mL)",
+                "vol" : "0.04 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title" : "Cardiac",
+        "treatments" : [
+          {
+            "title" : "Epinephrine",
+            "entries" : [
+              {
+                "amount" : "0.1 mg",
+                "title" : "Epinephrine (0.1 mg/mL)",
+                "vol" : "1 ml",
+                "dose" : "0.02 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Induction",
+            "entries" : [
+              {
+                "amount" : "0.8 mg",
+                "title" : "Etomidate",
+                "vol" : "0.4 ml",
+                "dose" : "0.2 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Paralysis",
+            "entries" : [
+              {
+                "amount" : "8 mg",
+                "title" : "Succinylcholine",
+                "vol" : "0.4 ml",
+                "dose" : "2 mg/kg"
+              },
+              {
+                "amount" : "4 mg",
+                "title" : "Rocuronium",
+                "vol" : "0.4 mL",
+                "dose" : "1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Sedation",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Midazolam (5 mg/mL)",
+                "vol" : "0.1 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Pain",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Morphine (10 mg/mL)",
+                "vol" : "0.04 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "vitalsAndEquipment" : {
+      "minimumSBP" : 60,
+      "ettDepth" : 9.5,
+      "respiratoryRange" : [
+        30,
+        60
+      ],
+      "suctionCath" : 8,
+      "approximateAge" : 3,
+      "fluidBolus" : 80,
+      "ettSize" : 3,
+      "heartRateRange" : [
+        100,
+        180
+      ]
+    }
+  },
+  {
+    "color" : "#3498DB",
+    "title" : "Blue",
+    "lbs" : 4,
+    "kgs" : 9,
+    "treatmentGroups" : [
+      {
+        "title" : "RSI",
+        "treatments" : [
+          {
+            "title" : "Premed",
+            "entries" : [
+              {
+                "amount" : "0.1 mg",
+                "title" : "Atropine",
+                "vol" : "1 ml",
+                "dose" : "0.02 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Induction",
+            "entries" : [
+              {
+                "amount" : "0.8 mg",
+                "title" : "Etomidate",
+                "vol" : "0.4 ml",
+                "dose" : "0.2 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Paralysis",
+            "entries" : [
+              {
+                "amount" : "8 mg",
+                "title" : "Succinylcholine",
+                "vol" : "0.4 ml",
+                "dose" : "2 mg/kg"
+              },
+              {
+                "amount" : "4 mg",
+                "title" : "Rocuronium",
+                "vol" : "0.4 mL",
+                "dose" : "1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Sedation",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Midazolam (5 mg/mL)",
+                "vol" : "0.1 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Pain",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Morphine (10 mg/mL)",
+                "vol" : "0.04 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title" : "Cardiac",
+        "treatments" : [
+          {
+            "title" : "Epinephrine",
+            "entries" : [
+              {
+                "amount" : "0.1 mg",
+                "title" : "Epinephrine (0.1 mg/mL)",
+                "vol" : "1 ml",
+                "dose" : "0.02 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Induction",
+            "entries" : [
+              {
+                "amount" : "0.8 mg",
+                "title" : "Etomidate",
+                "vol" : "0.4 ml",
+                "dose" : "0.2 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Paralysis",
+            "entries" : [
+              {
+                "amount" : "8 mg",
+                "title" : "Succinylcholine",
+                "vol" : "0.4 ml",
+                "dose" : "2 mg/kg"
+              },
+              {
+                "amount" : "4 mg",
+                "title" : "Rocuronium",
+                "vol" : "0.4 mL",
+                "dose" : "1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Sedation",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Midazolam (5 mg/mL)",
+                "vol" : "0.1 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Pain",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Morphine (10 mg/mL)",
+                "vol" : "0.04 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "vitalsAndEquipment" : {
+      "minimumSBP" : 60,
+      "ettDepth" : 9.5,
+      "respiratoryRange" : [
+        30,
+        60
+      ],
+      "suctionCath" : 8,
+      "approximateAge" : 3,
+      "fluidBolus" : 80,
+      "ettSize" : 3,
+      "heartRateRange" : [
+        100,
+        180
+      ]
+    }
+  },
+  {
+    "color" : "#F9690E",
+    "title" : "Orange",
+    "lbs" : 4,
+    "kgs" : 9,
+    "treatmentGroups" : [
+      {
+        "title" : "RSI",
+        "treatments" : [
+          {
+            "title" : "Premed",
+            "entries" : [
+              {
+                "amount" : "0.1 mg",
+                "title" : "Atropine",
+                "vol" : "1 ml",
+                "dose" : "0.02 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Induction",
+            "entries" : [
+              {
+                "amount" : "0.8 mg",
+                "title" : "Etomidate",
+                "vol" : "0.4 ml",
+                "dose" : "0.2 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Paralysis",
+            "entries" : [
+              {
+                "amount" : "8 mg",
+                "title" : "Succinylcholine",
+                "vol" : "0.4 ml",
+                "dose" : "2 mg/kg"
+              },
+              {
+                "amount" : "4 mg",
+                "title" : "Rocuronium",
+                "vol" : "0.4 mL",
+                "dose" : "1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Sedation",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Midazolam (5 mg/mL)",
+                "vol" : "0.1 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Pain",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Morphine (10 mg/mL)",
+                "vol" : "0.04 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title" : "Cardiac",
+        "treatments" : [
+          {
+            "title" : "Epinephrine",
+            "entries" : [
+              {
+                "amount" : "0.1 mg",
+                "title" : "Epinephrine (0.1 mg/mL)",
+                "vol" : "1 ml",
+                "dose" : "0.02 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Induction",
+            "entries" : [
+              {
+                "amount" : "0.8 mg",
+                "title" : "Etomidate",
+                "vol" : "0.4 ml",
+                "dose" : "0.2 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Paralysis",
+            "entries" : [
+              {
+                "amount" : "8 mg",
+                "title" : "Succinylcholine",
+                "vol" : "0.4 ml",
+                "dose" : "2 mg/kg"
+              },
+              {
+                "amount" : "4 mg",
+                "title" : "Rocuronium",
+                "vol" : "0.4 mL",
+                "dose" : "1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Sedation",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Midazolam (5 mg/mL)",
+                "vol" : "0.1 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Pain",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Morphine (10 mg/mL)",
+                "vol" : "0.04 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "vitalsAndEquipment" : {
+      "minimumSBP" : 60,
+      "ettDepth" : 9.5,
+      "respiratoryRange" : [
+        30,
+        60
+      ],
+      "suctionCath" : 8,
+      "approximateAge" : 3,
+      "fluidBolus" : 80,
+      "ettSize" : 3,
+      "heartRateRange" : [
+        100,
+        180
+      ]
+    }
+  },
+  {
+    "color" : "#26A65B",
+    "title" : "Green",
+    "lbs" : 4,
+    "kgs" : 9,
+    "treatmentGroups" : [
+      {
+        "title" : "RSI",
+        "treatments" : [
+          {
+            "title" : "Premed",
+            "entries" : [
+              {
+                "amount" : "0.1 mg",
+                "title" : "Atropine",
+                "vol" : "1 ml",
+                "dose" : "0.02 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Induction",
+            "entries" : [
+              {
+                "amount" : "0.8 mg",
+                "title" : "Etomidate",
+                "vol" : "0.4 ml",
+                "dose" : "0.2 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Paralysis",
+            "entries" : [
+              {
+                "amount" : "8 mg",
+                "title" : "Succinylcholine",
+                "vol" : "0.4 ml",
+                "dose" : "2 mg/kg"
+              },
+              {
+                "amount" : "4 mg",
+                "title" : "Rocuronium",
+                "vol" : "0.4 mL",
+                "dose" : "1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Sedation",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Midazolam (5 mg/mL)",
+                "vol" : "0.1 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Pain",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Morphine (10 mg/mL)",
+                "vol" : "0.04 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title" : "Cardiac",
+        "treatments" : [
+          {
+            "title" : "Epinephrine",
+            "entries" : [
+              {
+                "amount" : "0.1 mg",
+                "title" : "Epinephrine (0.1 mg/mL)",
+                "vol" : "1 ml",
+                "dose" : "0.02 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Induction",
+            "entries" : [
+              {
+                "amount" : "0.8 mg",
+                "title" : "Etomidate",
+                "vol" : "0.4 ml",
+                "dose" : "0.2 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Paralysis",
+            "entries" : [
+              {
+                "amount" : "8 mg",
+                "title" : "Succinylcholine",
+                "vol" : "0.4 ml",
+                "dose" : "2 mg/kg"
+              },
+              {
+                "amount" : "4 mg",
+                "title" : "Rocuronium",
+                "vol" : "0.4 mL",
+                "dose" : "1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Sedation",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Midazolam (5 mg/mL)",
+                "vol" : "0.1 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          },
+          {
+            "title" : "Pain",
+            "entries" : [
+              {
+                "amount" : "0.4 mg",
+                "title" : "Morphine (10 mg/mL)",
+                "vol" : "0.04 mL",
+                "dose" : "0.1 mg/kg"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "vitalsAndEquipment" : {
+      "minimumSBP" : 60,
+      "ettDepth" : 9.5,
+      "respiratoryRange" : [
+        30,
+        60
+      ],
+      "suctionCath" : 8,
+      "approximateAge" : 3,
+      "fluidBolus" : 80,
+      "ettSize" : 3,
+      "heartRateRange" : [
+        100,
+        180
+      ]
+    }
+  }
+]
