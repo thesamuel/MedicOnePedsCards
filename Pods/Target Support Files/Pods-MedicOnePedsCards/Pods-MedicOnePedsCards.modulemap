@@ -1,6 +1,0 @@
-framework module Pods_MedicOnePedsCards {
-  umbrella header "Pods-MedicOnePedsCards-umbrella.h"
-
-  export *
-  module * { export * }
-}
