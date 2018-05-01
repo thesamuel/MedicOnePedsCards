@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		611ED707209810DC00CEC93A /* TreatmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611ED706209810DC00CEC93A /* TreatmentTableViewController.swift */; };
 		613227F02094104D006A2585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613227EF2094104D006A2585 /* AppDelegate.swift */; };
 		613227F72094104D006A2585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 613227F62094104D006A2585 /* Assets.xcassets */; };
 		613227FA2094104D006A2585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613227F82094104D006A2585 /* LaunchScreen.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		611ED706209810DC00CEC93A /* TreatmentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentTableViewController.swift; sourceTree = "<group>"; };
 		613227EC2094104D006A2585 /* MedicOnePedsCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicOnePedsCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		613227EF2094104D006A2585 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		613227F62094104D006A2585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				61322801209411CB006A2585 /* ColorsCollectionViewController.swift */,
 				618DE15C2097EFA200A18742 /* TreatmentGroupsCollectionViewController.swift */,
+				611ED706209810DC00CEC93A /* TreatmentTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				61322802209411CB006A2585 /* ColorsCollectionViewController.swift in Sources */,
 				613227F02094104D006A2585 /* AppDelegate.swift in Sources */,
 				61322805209413AD006A2585 /* BigButtonCollectionViewCell.swift in Sources */,
+				611ED707209810DC00CEC93A /* TreatmentTableViewController.swift in Sources */,
 				618DE15D2097EFA200A18742 /* TreatmentGroupsCollectionViewController.swift in Sources */,
 				618DE1612097F71E00A18742 /* LGButton.swift in Sources */,
 				619EC8842096DC2E00D64AF2 /* ColorGroup.swift in Sources */,

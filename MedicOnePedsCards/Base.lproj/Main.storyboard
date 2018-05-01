@@ -164,10 +164,41 @@
                             <outlet property="delegate" destination="lr0-CP-3y0" id="ZLG-49-b3N"/>
                         </connections>
                     </collectionView>
+                    <connections>
+                        <segue destination="yfh-ad-R2r" kind="show" id="lwd-x5-KnM"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZN-Yi-hD8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1800.8" y="320.68965517241384"/>
+        </scene>
+        <!--Treatment Table View Controller-->
+        <scene sceneID="AGA-zd-kaH">
+            <objects>
+                <tableViewController id="yfh-ad-R2r" customClass="TreatmentTableViewController" customModule="MedicOnePedsCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TTW-Q4-SKM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="TIE-Js-OGn">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TIE-Js-OGn" id="E9F-9L-KKf">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yfh-ad-R2r" id="IU2-bH-a4W"/>
+                            <outlet property="delegate" destination="yfh-ad-R2r" id="Buh-5k-ArV"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zoo-6p-Hgg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2652" y="321"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dc8-8C-QWW">
