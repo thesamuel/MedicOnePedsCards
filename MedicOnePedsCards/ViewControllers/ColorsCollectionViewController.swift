@@ -71,16 +71,17 @@ class ColorsCollectionViewController: UICollectionViewController, UICollectionVi
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         // Set size for each cell
-        let width = collectionView.bounds.width / 2
-        let height = width / 1.75
+        let layout = collectionViewLayout as! UICollectionViewFlowLayout
+        let sectionInset = layout.sectionInset
 
-        return CGSize(width: width, height: height)
-    }
+        // Calculate width for 2 cells per line
+        let totalSpacing = sectionInset.left + sectionInset.right + layout.minimumInteritemSpacing
+        let totalContentWidth = collectionView.bounds.width - totalSpacing
 
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0;
+        let cellWidth = totalContentWidth / 2
+        let cellHeight = cellWidth / 1.75
+
+        return CGSize(width: cellWidth, height: cellHeight)
     }
 
 

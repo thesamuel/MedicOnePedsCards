@@ -62,10 +62,15 @@ UICollectionViewDelegateFlowLayout {
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         // Set size for each cell
-        let width = collectionView.bounds.width
-        let height = width / 5
+        let layout = collectionViewLayout as! UICollectionViewFlowLayout
+        let sectionInset = layout.sectionInset
 
-        return CGSize(width: width, height: height)
+        // Calculate width for 1 cell per line
+        let totalSpacing = sectionInset.left + sectionInset.right
+        let cellWidth = collectionView.bounds.width - totalSpacing
+        let cellHeight = cellWidth / 5
+
+        return CGSize(width: cellWidth, height: cellHeight)
     }
 
     

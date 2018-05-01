@@ -50,13 +50,17 @@ class TreatmentTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView,
                             cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, 
-                                                 for: indexPath)
+                                                 for: indexPath) as! EntryTableViewCell
 
         // Configure the cell
         let entry = treatmentGroup.treatments[indexPath.section].entries[indexPath.row]
 
-        // TODO: add the rest!
-        cell.textLabel?.text = entry.title
+        cell.treatmentLabel.text = entry.title
+        cell.amountLabel.text = "Amt: " + entry.amount
+        cell.doseLabel.text = "Dose: " + entry.dose
+        cell.volumeLabel.text = "Vol: " + entry.vol
+        cell.administerButton.layer.cornerRadius = 4  // FIXME
+        // TODO: add IM/IN field
 
         return cell
     }
