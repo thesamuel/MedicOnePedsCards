@@ -225,11 +225,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="83" id="TIE-Js-OGn" customClass="EntryTableViewCell" customModule="MedicOnePedsCards" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.333333333333343" width="414" height="83"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="89" id="TIE-Js-OGn" customClass="EntryTableViewCell" customModule="MedicOnePedsCards" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.333333333333343" width="414" height="89"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TIE-Js-OGn" id="E9F-9L-KKf">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="82.666666666666671"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="88.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Treatment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2b7-7g-wcf">
@@ -245,19 +245,19 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTy-Hz-oqc">
-                                            <rect key="frame" x="16.000000000000004" y="47.666666666666664" width="33.333333333333343" height="16.999999999999993"/>
+                                            <rect key="frame" x="16.000000000000004" y="52" width="33.333333333333343" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWi-Jf-iUR">
-                                            <rect key="frame" x="64.666666666666671" y="47.666666666666664" width="50.666666666666671" height="16.999999999999993"/>
+                                            <rect key="frame" x="64.666666666666671" y="52" width="50.666666666666671" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IYB-OY-rRy" customClass="LGButton" customModule="MedicOnePedsCards" customModuleProvider="target">
-                                            <rect key="frame" x="297" y="41" width="101" height="29.666666666666671"/>
+                                            <rect key="frame" x="297" y="42.666666666666664" width="101" height="34.999999999999993"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Administer"/>
@@ -284,11 +284,11 @@
                                         <constraint firstItem="IYB-OY-rRy" firstAttribute="centerY" secondItem="OWi-Jf-iUR" secondAttribute="centerY" id="9Ua-K0-Nz1"/>
                                         <constraint firstItem="2b7-7g-wcf" firstAttribute="top" secondItem="E9F-9L-KKf" secondAttribute="top" constant="12" id="Bnb-D0-Blv"/>
                                         <constraint firstAttribute="bottom" secondItem="IYB-OY-rRy" secondAttribute="bottom" constant="12" id="C4A-pV-nPf"/>
-                                        <constraint firstItem="IYB-OY-rRy" firstAttribute="top" secondItem="WPb-vl-8dA" secondAttribute="bottom" constant="8" id="Eme-kY-bpi"/>
                                         <constraint firstItem="OWi-Jf-iUR" firstAttribute="leading" secondItem="MTy-Hz-oqc" secondAttribute="trailing" constant="16" id="LFC-mq-Rg7"/>
                                         <constraint firstItem="OWi-Jf-iUR" firstAttribute="baseline" secondItem="MTy-Hz-oqc" secondAttribute="baseline" id="Oox-WC-pgL"/>
                                         <constraint firstAttribute="trailing" secondItem="IYB-OY-rRy" secondAttribute="trailing" constant="16" id="TFq-PM-KFM"/>
                                         <constraint firstItem="2b7-7g-wcf" firstAttribute="leading" secondItem="E9F-9L-KKf" secondAttribute="leading" constant="16" id="buW-18-Scd"/>
+                                        <constraint firstItem="IYB-OY-rRy" firstAttribute="top" secondItem="2b7-7g-wcf" secondAttribute="bottom" constant="4" id="gtd-On-tiw"/>
                                         <constraint firstItem="WPb-vl-8dA" firstAttribute="top" secondItem="E9F-9L-KKf" secondAttribute="top" constant="12" id="pJc-8H-nyF"/>
                                         <constraint firstAttribute="trailing" secondItem="WPb-vl-8dA" secondAttribute="trailing" constant="16" id="tVa-OL-Lkp"/>
                                     </constraints>
