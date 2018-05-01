@@ -19,8 +19,6 @@ public class LGButton: UIControl {
 
     let touchDisableRadius : CGFloat = 100.0
 
-    let availableFontIcons = ["fa", "io", "oc", "ic", "ma", "ti", "mi"]
-    
     var gradient : CAGradientLayer?
     
     
@@ -38,7 +36,7 @@ public class LGButton: UIControl {
     @IBOutlet fileprivate weak var leadingMainConstraint: NSLayoutConstraint!
     @IBOutlet fileprivate weak var bottomMainConstraint: NSLayoutConstraint!
     @IBOutlet fileprivate weak var topMainConstraint: NSLayoutConstraint!
-    
+
     @IBOutlet fileprivate weak var leftImageHeightConstraint: NSLayoutConstraint!
     @IBOutlet fileprivate weak var leftImageWidthConstraint: NSLayoutConstraint!
     @IBOutlet fileprivate weak var rightImageHeightConstraint: NSLayoutConstraint!
@@ -373,8 +371,6 @@ public class LGButton: UIControl {
         setupGradientBackground()
         setupBorderAndCorners()
         setupTitle()
-        setupLeftIcon()
-        setupRightIcon()
         setupLeftImage()
         setupRightImage()
         setupSpacings()
@@ -443,23 +439,7 @@ public class LGButton: UIControl {
             titleLbl.font = UIFont.systemFont(ofSize: titleFontSize)
         }
     }
-    
-    fileprivate func setupLeftIcon(){
-        setupIcon(icon: leftIcon,
-                  fontName: leftIconFontName,
-                  iconName: leftIconString,
-                  fontSize: leftIconFontSize,
-                  color: leftIconColor)
-    }
-    
-    fileprivate func setupRightIcon(){
-        setupIcon(icon: rightIcon,
-                  fontName: rightIconFontName,
-                  iconName: rightIconString,
-                  fontSize: rightIconFontSize,
-                  color: rightIconColor)
-    }
-    
+
     fileprivate func setupLeftImage(){
         setupImage(imageView: leftImage,
                    image: leftImageSrc,
@@ -468,7 +448,7 @@ public class LGButton: UIControl {
                    heightConstraint: leftImageHeightConstraint,
                    widthValue: leftImageWidth,
                    heightValue: leftImageHeight)
-        leftIcon.isHidden =  (leftImageSrc != nil || !availableFontIcons.contains(leftIconFontName))
+        leftIcon.isHidden =  (leftImageSrc != nil)
     }
     
     fileprivate func setupRightImage(){
@@ -480,7 +460,7 @@ public class LGButton: UIControl {
                    heightConstraint: rightImageHeightConstraint,
                    widthValue: rightImageWidth,
                    heightValue: rightImageHeight)
-        rightIcon.isHidden =  (rightImageSrc != nil || !availableFontIcons.contains(rightIconFontName))
+        rightIcon.isHidden =  (rightImageSrc != nil)
     }
     
     fileprivate func setupSpacings(){
@@ -511,47 +491,7 @@ public class LGButton: UIControl {
         loadingSpinner.color = loadingSpinnerColor
         setupBorderAndCorners()
     }
-    
-    fileprivate func setupIcon(icon:UILabel, fontName:String, iconName:String, fontSize:CGFloat, color:UIColor){
-        icon.isHidden = !availableFontIcons.contains(fontName)
-        if  !icon.isHidden {
-            icon.textColor = color
-            switch fontName {
-            case "fa":
-                icon.font = UIFont.icon(from: .FontAwesome, ofSize: fontSize)
-                icon.text = String.fontAwesomeIcon(iconName)
-                break;
-            case "io":
-                icon.font = UIFont.icon(from: .Ionicon, ofSize: fontSize)
-                icon.text = String.fontIonIcon(iconName)
-                break;
-            case "oc":
-                icon.font = UIFont.icon(from: .Octicon, ofSize: fontSize)
-                icon.text = String.fontOcticon(iconName)
-                break;
-            case "ic":
-                icon.font = UIFont.icon(from: .Iconic, ofSize: fontSize)
-                icon.text = String.fontIconicIcon(iconName)
-                break;
-            case "ma":
-                icon.font = UIFont.icon(from: .MaterialIcon, ofSize: fontSize)
-                icon.text = String.fontMaterialIcon(iconName.replacingOccurrences(of: "-", with: "."))
-                break;
-            case "ti":
-                icon.font = UIFont.icon(from: .Themify, ofSize: fontSize)
-                icon.text = String.fontThemifyIcon(iconName.replacingOccurrences(of: "-", with: "."))
-                break;
-            case "mi":
-                icon.font = UIFont.icon(from: .MapIcon, ofSize: fontSize)
-                icon.text = String.fontMapIcon(iconName.replacingOccurrences(of: "-", with: "."))
-                break;
-            default:
-                break;
-            }
-        }
-        setupBorderAndCorners()
-    }
-    
+
     fileprivate func setupImage(imageView:UIImageView, image:UIImage?, color:UIColor?, widthConstraint:NSLayoutConstraint, heightConstraint:NSLayoutConstraint, widthValue:CGFloat, heightValue:CGFloat){
         imageView.isHidden = image == nil
         if image != nil {
