@@ -19,6 +19,16 @@ UICollectionViewDelegateFlowLayout {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationItem.title = colorGroup.title
+
+        let navigationBar = self.navigationController?.navigationBar
+        navigationBar?.barTintColor = UIColor(hex: colorGroup.color)
+
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        let navigationBar = self.navigationController?.navigationBar
+        navigationBar?.barTintColor = UIColor(hex: colorGroup.color)
     }
 
     // MARK: UICollectionViewDataSource

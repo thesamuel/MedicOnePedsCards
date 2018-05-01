@@ -16,7 +16,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" id="wyU-su-jBo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lqt-5e-m3C">
                             <size key="itemSize" width="175" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="10"/>
@@ -81,7 +81,9 @@
                             <outlet property="delegate" destination="OMO-Tn-BSj" id="m5E-RF-olo"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Medic One Peds Cards" id="NpT-1b-VXO"/>
+                    <navigationItem key="navigationItem" title="Medic One Peds Cards" id="NpT-1b-VXO">
+                        <barButtonItem key="backBarButtonItem" title="Peds Cards" id="3LP-Ig-E1R"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="lr0-CP-3y0" kind="show" identifier="TreatmentGroupsSegue" id="SGS-Mi-VwD"/>
                     </connections>
@@ -94,10 +96,10 @@
         <scene sceneID="XeR-VB-Dse">
             <objects>
                 <collectionViewController id="lr0-CP-3y0" customClass="TreatmentGroupsCollectionViewController" customModule="MedicOnePedsCards" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="gC0-qt-drR">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" id="gC0-qt-drR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="X2A-Xm-AMt">
                             <size key="itemSize" width="375" height="75"/>
                             <size key="headerReferenceSize" width="0.0" height="8"/>
@@ -118,7 +120,7 @@
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Error"/>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
-                                                    <real key="value" value="40"/>
+                                                    <real key="value" value="30"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
                                                     <color key="value" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -175,6 +177,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oJM-2p-S22">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

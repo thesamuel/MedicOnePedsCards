@@ -21,6 +21,11 @@ class ColorsCollectionViewController: UICollectionViewController, UICollectionVi
         loadColorGroups()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        let navigationBar = self.navigationController?.navigationBar
+        navigationBar?.barTintColor = .white
+    }
+    
     func loadColorGroups() {
         let jsonUrl = Bundle.main.url(forResource: "colorgroups", withExtension: "json")!
         let jsonData = try! Data(contentsOf: jsonUrl)
