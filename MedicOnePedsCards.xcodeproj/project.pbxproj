@@ -87,19 +87,19 @@
 			isa = PBXGroup;
 			children = (
 				6174D56B20981BFA002123F2 /* EntryTableViewCell.swift */,
-				618C924E2097FFD9002D8222 /* BigButton */,
+				61322803209413AD006A2585 /* BigButtonCollectionViewCell.swift */,
+				618C924E2097FFD9002D8222 /* LGButton */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		618C924E2097FFD9002D8222 /* BigButton */ = {
+		618C924E2097FFD9002D8222 /* LGButton */ = {
 			isa = PBXGroup;
 			children = (
 				618DE1602097F71E00A18742 /* LGButton.swift */,
 				618694FF2097FBDA0046F9DF /* LGButton.xib */,
-				61322803209413AD006A2585 /* BigButtonCollectionViewCell.swift */,
 			);
-			path = BigButton;
+			path = LGButton;
 			sourceTree = "<group>";
 		};
 		618C924F2097FFF0002D8222 /* ViewControllers */ = {
