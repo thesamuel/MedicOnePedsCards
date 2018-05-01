@@ -67,7 +67,7 @@ class ColorsCollectionViewController: UICollectionViewController, UICollectionVi
         let width = collectionView.bounds.width / 2
         let height = width / 1.75
 
-        return CGSize(width: width, height: height);
+        return CGSize(width: width, height: height)
     }
 
     func collectionView(_ collectionView: UICollectionView,

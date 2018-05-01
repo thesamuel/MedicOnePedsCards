@@ -10,7 +10,8 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class TreatmentGroupsCollectionViewController: UICollectionViewController {
+class TreatmentGroupsCollectionViewController: UICollectionViewController,
+UICollectionViewDelegateFlowLayout {
 
     var colorGroup: ColorGroup!
 
@@ -39,8 +40,21 @@ class TreatmentGroupsCollectionViewController: UICollectionViewController {
         let treatmentGroup = colorGroup.treatmentGroups[indexPath.item]
 
         cell.title = treatmentGroup.title
-        cell.color = UIColor.gray
+        cell.color = UIColor(hex: colorGroup.color)
     
         return cell
     }
+
+    // MARK: - UICollectionViewDelegateFlowLayout
+
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        // Set size for each cell
+        let width = collectionView.bounds.width
+        let height = width / 5
+
+        return CGSize(width: width, height: height)
+    }
+
 }
