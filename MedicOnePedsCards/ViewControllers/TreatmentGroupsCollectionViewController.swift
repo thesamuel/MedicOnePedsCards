@@ -27,7 +27,8 @@ UICollectionViewDelegateFlowLayout {
         navigationBar?.barTintColor = UIColor(hex: colorGroup.color)
     }
 
-    // MARK: UICollectionViewDataSource
+
+    // MARK: - UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -54,6 +55,7 @@ UICollectionViewDelegateFlowLayout {
         return cell
     }
 
+
     // MARK: - UICollectionViewDelegateFlowLayout
 
     func collectionView(_ collectionView: UICollectionView,
@@ -66,6 +68,7 @@ UICollectionViewDelegateFlowLayout {
         return CGSize(width: width, height: height)
     }
 
+    
     // MARK: - Navigation
 
     var selectedTreatmentGroup: ColorGroup.TreatmentGroup?
@@ -75,7 +78,6 @@ UICollectionViewDelegateFlowLayout {
         performSegue(withIdentifier: "TreatmentSegue", sender: nil)
     }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let treatment = segue.destination as! TreatmentTableViewController
         treatment.colorGroup = colorGroup

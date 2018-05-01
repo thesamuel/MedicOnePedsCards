@@ -35,6 +35,7 @@ class ColorsCollectionViewController: UICollectionViewController, UICollectionVi
         self.colorGroups = try! jsonDecoder.decode([ColorGroup].self, from: jsonData)
     }
 
+
     // MARK: - UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -63,6 +64,7 @@ class ColorsCollectionViewController: UICollectionViewController, UICollectionVi
         return cell
     }
 
+
     // MARK: - UICollectionViewDelegateFlowLayout
 
     func collectionView(_ collectionView: UICollectionView,
@@ -81,6 +83,7 @@ class ColorsCollectionViewController: UICollectionViewController, UICollectionVi
         return 0;
     }
 
+
     // MARK: - Navigation
 
     var selectedColorGroup: ColorGroup?
@@ -90,12 +93,9 @@ class ColorsCollectionViewController: UICollectionViewController, UICollectionVi
         performSegue(withIdentifier: "TreatmentGroupsSegue", sender: nil)
     }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let treatmentGroups = segue.destination as! TreatmentGroupsCollectionViewController
         treatmentGroups.colorGroup = selectedColorGroup
-        // FIXME
-//        selectedColorGroup = nil
     }
 
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
