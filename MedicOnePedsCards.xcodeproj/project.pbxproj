@@ -15,6 +15,7 @@
 		61322805209413AD006A2585 /* BigButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61322803209413AD006A2585 /* BigButtonCollectionViewCell.swift */; };
 		618DE15B2097EC3600A18742 /* colorgroups.json in Resources */ = {isa = PBXBuildFile; fileRef = 618DE15A2097EC3500A18742 /* colorgroups.json */; };
 		618DE15D2097EFA200A18742 /* TreatmentGroupsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DE15C2097EFA200A18742 /* TreatmentGroupsCollectionViewController.swift */; };
+		618DE1612097F71E00A18742 /* LGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DE1602097F71E00A18742 /* LGButton.swift */; };
 		619EC8842096DC2E00D64AF2 /* ColorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EC8832096DC2E00D64AF2 /* ColorGroup.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		61322803209413AD006A2585 /* BigButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigButtonCollectionViewCell.swift; sourceTree = "<group>"; };
 		618DE15A2097EC3500A18742 /* colorgroups.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = colorgroups.json; sourceTree = "<group>"; };
 		618DE15C2097EFA200A18742 /* TreatmentGroupsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentGroupsCollectionViewController.swift; sourceTree = "<group>"; };
+		618DE1602097F71E00A18742 /* LGButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGButton.swift; sourceTree = "<group>"; };
 		619EC8832096DC2E00D64AF2 /* ColorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 				613227F32094104D006A2585 /* Main.storyboard */,
 				619EC8832096DC2E00D64AF2 /* ColorGroup.swift */,
 				61322801209411CB006A2585 /* ColorsCollectionViewController.swift */,
+				618DE1602097F71E00A18742 /* LGButton.swift */,
 				618DE15C2097EFA200A18742 /* TreatmentGroupsCollectionViewController.swift */,
 				61322803209413AD006A2585 /* BigButtonCollectionViewCell.swift */,
 				618DE15A2097EC3500A18742 /* colorgroups.json */,
@@ -153,6 +156,7 @@
 				613227F02094104D006A2585 /* AppDelegate.swift in Sources */,
 				61322805209413AD006A2585 /* BigButtonCollectionViewCell.swift in Sources */,
 				618DE15D2097EFA200A18742 /* TreatmentGroupsCollectionViewController.swift in Sources */,
+				618DE1612097F71E00A18742 /* LGButton.swift in Sources */,
 				619EC8842096DC2E00D64AF2 /* ColorGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

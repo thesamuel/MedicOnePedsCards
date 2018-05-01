@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import LGButton
 
 class BigButtonCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var button: LGButton!
