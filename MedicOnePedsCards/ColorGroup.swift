@@ -8,7 +8,10 @@
 
 import UIKit
 
+
 struct ColorGroup: Codable {
+    public static let localFilename = "medicone"
+
     let title: String
     let lbs: Int
     let kgs: Int

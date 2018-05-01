@@ -27,7 +27,7 @@ class ColorsCollectionViewController: UICollectionViewController, UICollectionVi
     }
     
     func loadColorGroups() {
-        let jsonUrl = Bundle.main.url(forResource: "colorgroups", withExtension: "json")!
+        let jsonUrl = Bundle.main.url(forResource: ColorGroup.localFilename, withExtension: "json")!
         let jsonData = try! Data(contentsOf: jsonUrl)
         let jsonDecoder = JSONDecoder()
 

@@ -16,7 +16,7 @@
 		6174D56C20981BFA002123F2 /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6174D56B20981BFA002123F2 /* EntryTableViewCell.swift */; };
 		618695002097FBDA0046F9DF /* LGButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 618694FF2097FBDA0046F9DF /* LGButton.xib */; };
 		618C924D2097FDBC002D8222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 618C924B2097FDBC002D8222 /* Main.storyboard */; };
-		618DE15B2097EC3600A18742 /* colorgroups.json in Resources */ = {isa = PBXBuildFile; fileRef = 618DE15A2097EC3500A18742 /* colorgroups.json */; };
+		618DE15B2097EC3600A18742 /* medicone.json in Resources */ = {isa = PBXBuildFile; fileRef = 618DE15A2097EC3500A18742 /* medicone.json */; };
 		618DE15D2097EFA200A18742 /* TreatmentGroupsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DE15C2097EFA200A18742 /* TreatmentGroupsCollectionViewController.swift */; };
 		618DE1612097F71E00A18742 /* LGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DE1602097F71E00A18742 /* LGButton.swift */; };
 		619EC8842096DC2E00D64AF2 /* ColorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EC8832096DC2E00D64AF2 /* ColorGroup.swift */; };
@@ -34,7 +34,7 @@
 		6174D56B20981BFA002123F2 /* EntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
 		618694FF2097FBDA0046F9DF /* LGButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGButton.xib; sourceTree = "<group>"; };
 		618C924C2097FDBC002D8222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		618DE15A2097EC3500A18742 /* colorgroups.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = colorgroups.json; sourceTree = "<group>"; };
+		618DE15A2097EC3500A18742 /* medicone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = medicone.json; sourceTree = "<group>"; };
 		618DE15C2097EFA200A18742 /* TreatmentGroupsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentGroupsCollectionViewController.swift; sourceTree = "<group>"; };
 		618DE1602097F71E00A18742 /* LGButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGButton.swift; sourceTree = "<group>"; };
 		619EC8832096DC2E00D64AF2 /* ColorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGroup.swift; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 				619EC8832096DC2E00D64AF2 /* ColorGroup.swift */,
 				618C924F2097FFF0002D8222 /* ViewControllers */,
 				618C924E2097FFD9002D8222 /* BigButton */,
-				618DE15A2097EC3500A18742 /* colorgroups.json */,
+				618DE15A2097EC3500A18742 /* medicone.json */,
 				613227F62094104D006A2585 /* Assets.xcassets */,
 				613227F82094104D006A2585 /* LaunchScreen.storyboard */,
 				613227FB2094104D006A2585 /* Info.plist */,
@@ -166,7 +166,7 @@
 				613227FA2094104D006A2585 /* LaunchScreen.storyboard in Resources */,
 				618C924D2097FDBC002D8222 /* Main.storyboard in Resources */,
 				613227F72094104D006A2585 /* Assets.xcassets in Resources */,
-				618DE15B2097EC3600A18742 /* colorgroups.json in Resources */,
+				618DE15B2097EC3600A18742 /* medicone.json in Resources */,
 				618695002097FBDA0046F9DF /* LGButton.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
