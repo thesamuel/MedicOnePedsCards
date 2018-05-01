@@ -12,10 +12,22 @@ private let reuseIdentifier = "Cell"
 
 class ColorsCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
+    var colorGroups: [ColorGroup]!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Additional setup
+        loadColorGroups()
+    }
+
+    func loadColorGroups() {
+        let jsonUrl = Bundle.main.url(forResource: "sample", withExtension: "json")!
+        let jsonData = try! Data(contentsOf: jsonUrl)
+        let jsonDecoder = JSONDecoder()
+
+        // Update color groups
+        self.colorGroups = try! jsonDecoder.decode([ColorGroup].self, from: jsonData)
     }
 
     // MARK: - UICollectionViewDataSource
@@ -29,7 +41,7 @@ class ColorsCollectionViewController: UICollectionViewController, UICollectionVi
     override func collectionView(_ collectionView: UICollectionView,
                                  numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 5
+        return colorGroups.count
     }
 
     override func collectionView(_ collectionView: UICollectionView,
@@ -38,10 +50,12 @@ class ColorsCollectionViewController: UICollectionViewController, UICollectionVi
                                                       for: indexPath) as! BigButtonCollectionViewCell
     
         // Configure the cell
-        // FIXME
-        cell.color = UIColor(red: 242/255.0, green: 38/255.0, blue: 19/255.0, alpha: 1.0)
-        cell.title = "mom"
-    
+        let colorGroup = colorGroups[indexPath.item]
+        cell.title = colorGroup.title
+
+        // FIXME: should be done already!
+        cell.color = UIColor(hex: colorGroup.color)
+
         return cell
     }
 

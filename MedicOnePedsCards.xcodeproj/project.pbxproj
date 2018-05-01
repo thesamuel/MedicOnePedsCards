@@ -13,6 +13,8 @@
 		613227FA2094104D006A2585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613227F82094104D006A2585 /* LaunchScreen.storyboard */; };
 		61322802209411CB006A2585 /* ColorsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61322801209411CB006A2585 /* ColorsCollectionViewController.swift */; };
 		61322805209413AD006A2585 /* BigButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61322803209413AD006A2585 /* BigButtonCollectionViewCell.swift */; };
+		619177CF2097E7A200BC9365 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 619177CE2097E7A200BC9365 /* sample.json */; };
+		619EC8842096DC2E00D64AF2 /* ColorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EC8832096DC2E00D64AF2 /* ColorGroup.swift */; };
 		FBB8C3ACD1AFE61A2E466C99 /* Pods_MedicOnePedsCards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7BCDCF2DBA5CDE59F5BA38 /* Pods_MedicOnePedsCards.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		613227FB2094104D006A2585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61322801209411CB006A2585 /* ColorsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsCollectionViewController.swift; sourceTree = "<group>"; };
 		61322803209413AD006A2585 /* BigButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		619177CE2097E7A200BC9365 /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
+		619EC8832096DC2E00D64AF2 /* ColorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGroup.swift; sourceTree = "<group>"; };
 		84C4ADFC558766438DF97309 /* Pods-MedicOnePedsCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicOnePedsCards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedicOnePedsCards/Pods-MedicOnePedsCards.debug.xcconfig"; sourceTree = "<group>"; };
 		AD7BCDCF2DBA5CDE59F5BA38 /* Pods_MedicOnePedsCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicOnePedsCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F0C2A58C8D6BC59AEB7BCB /* Pods-MedicOnePedsCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicOnePedsCards.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedicOnePedsCards/Pods-MedicOnePedsCards.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,8 +86,10 @@
 			children = (
 				613227EF2094104D006A2585 /* AppDelegate.swift */,
 				613227F32094104D006A2585 /* Main.storyboard */,
+				619EC8832096DC2E00D64AF2 /* ColorGroup.swift */,
 				61322801209411CB006A2585 /* ColorsCollectionViewController.swift */,
 				61322803209413AD006A2585 /* BigButtonCollectionViewCell.swift */,
+				619177CE2097E7A200BC9365 /* sample.json */,
 				613227F62094104D006A2585 /* Assets.xcassets */,
 				613227F82094104D006A2585 /* LaunchScreen.storyboard */,
 				613227FB2094104D006A2585 /* Info.plist */,
@@ -153,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				613227FA2094104D006A2585 /* LaunchScreen.storyboard in Resources */,
+				619177CF2097E7A200BC9365 /* sample.json in Resources */,
 				613227F72094104D006A2585 /* Assets.xcassets in Resources */,
 				613227F52094104D006A2585 /* Main.storyboard in Resources */,
 			);
@@ -207,6 +214,7 @@
 				61322802209411CB006A2585 /* ColorsCollectionViewController.swift in Sources */,
 				613227F02094104D006A2585 /* AppDelegate.swift in Sources */,
 				61322805209413AD006A2585 /* BigButtonCollectionViewCell.swift in Sources */,
+				619EC8842096DC2E00D64AF2 /* ColorGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
