@@ -39,6 +39,10 @@ class BigButtonCollectionViewCell: UICollectionViewCell {
             button.gradientEndColor = endColor
         }
     }
+
+    override func prepareForReuse() {
+        button.didTouchUpInside = nil
+    }
 }
 
 extension UIColor {

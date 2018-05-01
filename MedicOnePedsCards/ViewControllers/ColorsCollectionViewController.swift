@@ -48,8 +48,12 @@ class ColorsCollectionViewController: UICollectionViewController, UICollectionVi
     
         // Configure the cell
         let colorGroup = colorGroups[indexPath.item]
+
         cell.title = colorGroup.title
         cell.color = UIColor(hex: colorGroup.color)  // FIXME
+        cell.button.didTouchUpInside = { _ in
+            self.performTreatmentGroupsSegue(forIndexPath: indexPath)
+        }
 
         return cell
     }
@@ -74,13 +78,22 @@ class ColorsCollectionViewController: UICollectionViewController, UICollectionVi
 
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+    var selectedColorGroup: ColorGroup?
+
+    func performTreatmentGroupsSegue(forIndexPath indexPath: IndexPath) {
+        self.selectedColorGroup = colorGroups[indexPath.item]
+        performSegue(withIdentifier: "TreatmentGroupsSegue", sender: nil)
     }
 
-    override func performSegue(withIdentifier identifier: String, sender: Any?) {
-        // TODO
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let treatmentGroups = segue.destination as! TreatmentGroupsCollectionViewController
+        treatmentGroups.colorGroup = selectedColorGroup
+        // FIXME
+//        selectedColorGroup = nil
+    }
+
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        return selectedColorGroup != nil
     }
 }
