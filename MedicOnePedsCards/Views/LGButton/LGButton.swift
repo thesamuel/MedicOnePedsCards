@@ -530,6 +530,9 @@ public class LGButton: UIControl {
     
     var pressed : Bool = false {
         didSet {
+            // Animate pressing
+            setPushedIn(pushedIn: pressed)
+
             if !showTouchFeedback {
                 return
             }
@@ -570,11 +573,40 @@ public class LGButton: UIControl {
     
     func updateTouchAlpha() {
         if self.alpha != self.touchAlpha.rawValue {
-            UIView.animate(withDuration: 0.3) {
+            UIView.animate(withDuration: 0.2) {
                 self.alpha = self.touchAlpha.rawValue
             }
         }
     }
+
+
+    // MARK: - Transformations
+
+    var finishedPushingIn = true
+
+    func setPushedIn(pushedIn: Bool) {
+        if (!finishedPushingIn) {
+            return
+        }
+
+        finishedPushingIn = false
+        UIView.animate(withDuration: 0.08, animations: {
+            if (pushedIn) {
+                let scale: CGFloat = 0.95
+                self.transform = CGAffineTransform(scaleX: scale, y: scale)
+            } else {
+                self.transform = CGAffineTransform.identity
+            }
+        }) { _ in
+            self.finishedPushingIn = true
+
+            // We've pushed in, but now button is not being pressed
+            if pushedIn && !self.pressed {
+                self.setPushedIn(pushedIn: false)
+            }
+        }
+    }
+
 
     // MARK: - Actions
     // Enables a closure to be used with a target action
