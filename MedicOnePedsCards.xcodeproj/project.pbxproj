@@ -72,16 +72,24 @@
 			children = (
 				613227EF2094104D006A2585 /* AppDelegate.swift */,
 				618C924B2097FDBC002D8222 /* Main.storyboard */,
-				6174D56B20981BFA002123F2 /* EntryTableViewCell.swift */,
 				619EC8832096DC2E00D64AF2 /* ColorGroup.swift */,
-				618C924F2097FFF0002D8222 /* ViewControllers */,
-				618C924E2097FFD9002D8222 /* BigButton */,
 				618DE15A2097EC3500A18742 /* medicone.json */,
+				6174D56D20983068002123F2 /* Views */,
+				618C924F2097FFF0002D8222 /* ViewControllers */,
 				613227F62094104D006A2585 /* Assets.xcassets */,
 				613227F82094104D006A2585 /* LaunchScreen.storyboard */,
 				613227FB2094104D006A2585 /* Info.plist */,
 			);
 			path = MedicOnePedsCards;
+			sourceTree = "<group>";
+		};
+		6174D56D20983068002123F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6174D56B20981BFA002123F2 /* EntryTableViewCell.swift */,
+				618C924E2097FFD9002D8222 /* BigButton */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		618C924E2097FFD9002D8222 /* BigButton */ = {
