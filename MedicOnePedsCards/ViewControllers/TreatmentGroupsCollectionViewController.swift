@@ -20,10 +20,6 @@ UICollectionViewDelegateFlowLayout {
 
         // Do any additional setup after loading the view.
         self.navigationItem.title = colorGroup.title
-
-        let navigationBar = self.navigationController?.navigationBar
-        navigationBar?.barTintColor = UIColor(hex: colorGroup.color)
-
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -51,6 +47,9 @@ UICollectionViewDelegateFlowLayout {
 
         cell.title = treatmentGroup.title
         cell.color = UIColor(hex: colorGroup.color)
+        cell.button.didTouchUpInside = { _ in
+            self.performTreatmentSegue(forIndexPath: indexPath)
+        }
     
         return cell
     }
@@ -67,4 +66,23 @@ UICollectionViewDelegateFlowLayout {
         return CGSize(width: width, height: height)
     }
 
+    // MARK: - Navigation
+
+    var selectedTreatmentGroup: ColorGroup.TreatmentGroup?
+
+    func performTreatmentSegue(forIndexPath indexPath: IndexPath) {
+        self.selectedTreatmentGroup = colorGroup.treatmentGroups[indexPath.item]
+        performSegue(withIdentifier: "TreatmentSegue", sender: nil)
+    }
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let treatment = segue.destination as! TreatmentTableViewController
+        treatment.colorGroup = colorGroup
+        treatment.treatmentGroup = selectedTreatmentGroup
+    }
+
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        return selectedTreatmentGroup != nil
+    }
 }
