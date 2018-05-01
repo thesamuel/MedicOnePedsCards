@@ -181,13 +181,64 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="TIE-Js-OGn">
-                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="84" id="TIE-Js-OGn" customClass="EntryTableViewCell" customModule="MedicOnePedsCards" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="84"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TIE-Js-OGn" id="E9F-9L-KKf">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="83.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Treatment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2b7-7g-wcf">
+                                            <rect key="frame" x="16" y="12" width="88" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPb-vl-8dA">
+                                            <rect key="frame" x="301" y="12" width="58" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTy-Hz-oqc">
+                                            <rect key="frame" x="16" y="48" width="31.5" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWi-Jf-iUR">
+                                            <rect key="frame" x="63" y="48" width="47.5" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69t-Cf-I24">
+                                            <rect key="frame" x="289" y="41" width="70" height="30"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal" title="Adminster"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="69t-Cf-I24" firstAttribute="top" secondItem="WPb-vl-8dA" secondAttribute="bottom" constant="8" id="1gf-td-Fre"/>
+                                        <constraint firstItem="MTy-Hz-oqc" firstAttribute="leading" secondItem="E9F-9L-KKf" secondAttribute="leading" constant="16" id="1w1-JC-laJ"/>
+                                        <constraint firstItem="2b7-7g-wcf" firstAttribute="top" secondItem="E9F-9L-KKf" secondAttribute="top" constant="12" id="Bnb-D0-Blv"/>
+                                        <constraint firstAttribute="trailing" secondItem="69t-Cf-I24" secondAttribute="trailing" constant="16" id="ISa-GU-mwj"/>
+                                        <constraint firstItem="MTy-Hz-oqc" firstAttribute="centerY" secondItem="69t-Cf-I24" secondAttribute="centerY" id="Jsc-pt-HjW"/>
+                                        <constraint firstItem="OWi-Jf-iUR" firstAttribute="leading" secondItem="MTy-Hz-oqc" secondAttribute="trailing" constant="16" id="LFC-mq-Rg7"/>
+                                        <constraint firstItem="OWi-Jf-iUR" firstAttribute="baseline" secondItem="MTy-Hz-oqc" secondAttribute="baseline" id="Oox-WC-pgL"/>
+                                        <constraint firstItem="2b7-7g-wcf" firstAttribute="leading" secondItem="E9F-9L-KKf" secondAttribute="leading" constant="16" id="buW-18-Scd"/>
+                                        <constraint firstItem="WPb-vl-8dA" firstAttribute="top" secondItem="E9F-9L-KKf" secondAttribute="top" constant="12" id="pJc-8H-nyF"/>
+                                        <constraint firstAttribute="trailing" secondItem="WPb-vl-8dA" secondAttribute="trailing" constant="16" id="tVa-OL-Lkp"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="administerButton" destination="69t-Cf-I24" id="RKv-hA-47j"/>
+                                    <outlet property="amountLabel" destination="OWi-Jf-iUR" id="XXc-2j-f3M"/>
+                                    <outlet property="doseLabel" destination="MTy-Hz-oqc" id="Y5z-4a-MnB"/>
+                                    <outlet property="treatmentLabel" destination="2b7-7g-wcf" id="ZJi-zx-bzi"/>
+                                    <outlet property="volumeLabel" destination="WPb-vl-8dA" id="xd7-Pd-pJb"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -198,7 +249,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zoo-6p-Hgg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2652" y="321"/>
+            <point key="canvasLocation" x="2652" y="320.68965517241384"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dc8-8C-QWW">

@@ -13,6 +13,7 @@
 		613227FA2094104D006A2585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613227F82094104D006A2585 /* LaunchScreen.storyboard */; };
 		61322802209411CB006A2585 /* ColorsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61322801209411CB006A2585 /* ColorsCollectionViewController.swift */; };
 		61322805209413AD006A2585 /* BigButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61322803209413AD006A2585 /* BigButtonCollectionViewCell.swift */; };
+		6174D56C20981BFA002123F2 /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6174D56B20981BFA002123F2 /* EntryTableViewCell.swift */; };
 		618695002097FBDA0046F9DF /* LGButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 618694FF2097FBDA0046F9DF /* LGButton.xib */; };
 		618C924D2097FDBC002D8222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 618C924B2097FDBC002D8222 /* Main.storyboard */; };
 		618DE15B2097EC3600A18742 /* colorgroups.json in Resources */ = {isa = PBXBuildFile; fileRef = 618DE15A2097EC3500A18742 /* colorgroups.json */; };
@@ -30,6 +31,7 @@
 		613227FB2094104D006A2585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61322801209411CB006A2585 /* ColorsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsCollectionViewController.swift; sourceTree = "<group>"; };
 		61322803209413AD006A2585 /* BigButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		6174D56B20981BFA002123F2 /* EntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
 		618694FF2097FBDA0046F9DF /* LGButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGButton.xib; sourceTree = "<group>"; };
 		618C924C2097FDBC002D8222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		618DE15A2097EC3500A18742 /* colorgroups.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = colorgroups.json; sourceTree = "<group>"; };
@@ -70,9 +72,10 @@
 			children = (
 				613227EF2094104D006A2585 /* AppDelegate.swift */,
 				618C924B2097FDBC002D8222 /* Main.storyboard */,
+				6174D56B20981BFA002123F2 /* EntryTableViewCell.swift */,
+				619EC8832096DC2E00D64AF2 /* ColorGroup.swift */,
 				618C924F2097FFF0002D8222 /* ViewControllers */,
 				618C924E2097FFD9002D8222 /* BigButton */,
-				619EC8832096DC2E00D64AF2 /* ColorGroup.swift */,
 				618DE15A2097EC3500A18742 /* colorgroups.json */,
 				613227F62094104D006A2585 /* Assets.xcassets */,
 				613227F82094104D006A2585 /* LaunchScreen.storyboard */,
@@ -175,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6174D56C20981BFA002123F2 /* EntryTableViewCell.swift in Sources */,
 				61322802209411CB006A2585 /* ColorsCollectionViewController.swift in Sources */,
 				613227F02094104D006A2585 /* AppDelegate.swift in Sources */,
 				61322805209413AD006A2585 /* BigButtonCollectionViewCell.swift in Sources */,
