@@ -38,13 +38,7 @@ class BigButtonCollectionViewCell: UICollectionViewCell {
                 return
             }
 
-            // Get HSV from new endColor
-            let saturationDelta: CGFloat = 0.4
-            let startColor = UIColor(hue: endColor.hsba.h,
-                                     saturation: max(endColor.hsba.s - saturationDelta, 0),
-                                     brightness: endColor.hsba.b,
-                                     alpha: 1)
-            button.gradientStartColor = startColor
+            button.gradientStartColor = endColor
             button.gradientEndColor = endColor
         }
     }
