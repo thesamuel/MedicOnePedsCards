@@ -12,19 +12,17 @@ struct Log {
 
     public static let filename = "log.json"
 
-    static func url() -> URL {
+    static var url: URL = {
         return FileManager.default
             .urls(for: .documentDirectory, in: .userDomainMask)
             .first!
             .appendingPathComponent(filename)
-    }
+    }()
 
     static func log() -> [LogEntry]? {
-        let logUrl = Log.url()
-
         let decoder = JSONDecoder()
-        let entries = try? decoder.decode([LogEntry].self, from: Data(contentsOf: logUrl))
-
+        let entries = try? decoder.decode([LogEntry].self,
+                                          from: Data(contentsOf: Log.url))
         return entries
     }
 
@@ -33,11 +31,9 @@ struct Log {
             return
         }
 
-        let logUrl = Log.url()
-
         let encoder = JSONEncoder()
         let entriesJson = try! encoder.encode(entries)
-        try! entriesJson.write(to: logUrl) // FIXME: can this fail?
+        try! entriesJson.write(to: Log.url) // FIXME: can this fail?
     }
 
     static func append(entry: LogEntry) {
@@ -96,7 +92,9 @@ struct ColorGroup: Codable {
 // Taken from https://stackoverflow.com/questions/24263007/how-to-use-hex-colour-values
 extension UIColor {
     convenience init(hex: String) {
-        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        var cString:String = hex
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+            .uppercased()
 
         if (cString.hasPrefix("#")) {
             cString.remove(at: cString.startIndex)
